@@ -51,25 +51,134 @@ Ein Web-Browser ist eine Software-Applikation welche genutzt wird um auf das WWW
 ![Nutzungsstatistiken Web-Browser](images/StatCounter-browser-ww-monthly-200901-201905.png)
 
 Web-Browser bieten folgende ähnliche Bedienelemente:
- - Eine `Adressleiste` zur Eingabe der URL welche geladen werden soll. Für gesicherte Verbindungen (https) wird dies über ein Schloss-Symbol angezeigt.
- - Ein Button zum Neuladen einer Webseite (`Refresh` oder `Reload`)
- - `Vor- und Zurück-Buttons` um in der Browser-Historie zu navigieren
- - Einen `Stop-Button`, welcher das Laden einer Webseite abbricht
- - Eine Eingabezeile zu Bedienung einer Suchmaschine (meistens als Teil der Adressleiste)
- - `Tabs` um mehrere Webseiten gleichzeitig zu öffnen
- - Der Titel einer Webseite bzw. das sog. Favicon werden im Tab angezeigt
+ 1. `Tabs` um mehrere Webseiten gleichzeitig zu öffnen. Der `Titel` einer Webseite bzw. das sog. `Favicon` werden ebenfalls im Tab angezeigt.
+ 2. Eine `Adressleiste` zur Eingabe der URL welche geladen werden soll. Für gesicherte Verbindungen (https) wird dies über ein `Schloss-Symbol` angezeigt. Die Adressleiste fungiert meist auch als `Eingabezeile für Suchmaschinen`.
+ 3. `Vor- und Zurück-Buttons` um in der Browser-Historie zu navigieren.
+ 4. Ein Button zum Neuladen einer Webseite (`Refresh` oder `Reload`). Während des Ladens fungiert dieser als `Stop-Button` um das Laden abzubrechen.
+ 5. Ein `Home-Button` läd eine hinterlegte Home-Seite.
+ 6. Mittels `Bookmarks/Lesezeichen` können Links auf Webseiten katalogisiert gespeichert werden.
+ 7. Innerhalb einer `Download-Historie` können vergangene Downloads wiedergefunden werden.
+ 8. Web-Browser können über `Extensions` erweitert werden.
 
-![Nutzungsstatistiken Web-Browser](images/web-browser-functions.png)
+![Web-Browser Bedienelemente](images/web-browser-functions.png)
+
 
 ## W3C und Standardisierung
+Das World Wide Web Consortium (W3C) ist die primäre internationale Standardisierungsorganisation des WWW. Das W3C ist für die Standadisierung der technischen Grundlagen des WWW zuständig. Gründer und Vorsitzender des W3C ist Tim Berners-Lee. Tim Berners-Lee ist der "Erfinder" des WWW.
 
-# Web-Technologien
+Der W3C Standadisierungsprozess gliedert sich in Dokumente mit unterschiedlichem Reifegrad:
+ - Working Draft (WD):
+ - Candidate Recommendation (CR):
+ - Proposed Recommendation (PR):
+ - W3C Recommendation: 
+
+Beispiele von W3C Recommendations: HTML, XML, CSS, PNG, SVG, DOM
+
+## Clientseitige Web-Technologien
+
+Zur Entwicklung von Webseiten bzw. Web-Anwendungen werden standardisierte Web-Technologien genutzt:
+
+ - Hypertext Markup Language (HTML): HTML wird genutzt um Inhalte zu strukturieren
+ - Cascading Stylesheets (CSS): CSS wird genutzt um Inhalte zu formatierung bzw. zu gestalten
+ - JavaScript: Mit JavaScript wird Verhalten und Dynamik in eine Webseite integriert
 
 # HTML
 
+Die Hypertext Markup Language (HTML) ist eine textbasierte Auszeichnungssprache zur Strukturierung von Webseiten (in diesem Zusammenhant als HTML-Dokumente bezeichnet). HTML basiert auf sog. Tags, welche als Text Bausteine mit den Zeichen `<` bzw. `>` definiert werden. HTML dient dabei nur der Strukturierung der Inhalte und legt keinerlei Formatierung fest.
+
+## HTML-Markup
 
 
-## Glossar
+
+```html
+<p>Ein Paragraph mit <a href="http://example.com">Link</a>
+und <em>hervorgehobener Textauszeichnung</em>.</p>
+```
+
+## Aufbau eines HTML-Dokumentes
+
+HTML-Dokumente haben einen definierten Aufbau:
+
+ - Ein HTML-Dokument startet mit einem Doctype, welcher die Version von HTML angibt (hier: HTML 5). Dem Web-Browser wird damit mitgeteilt, welche HTML-Version zu verarbeiten ist.
+ - Ein HTML-Dokument hat `html` als Wurzelelement und 2 Kindelemente `head` und `body`
+ - Im `head` befinden sich sog. Metadaten zum Dokument (zumindest der Titel, angegeben durch das `title` Element)
+ - Im `body` befinden sich alle Inhalte, welche im Web-Browser dargestellt werden
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meine Seite</title>
+  </head>
+  <body>
+    <!-- HTML Elemente -->
+  </body>
+</html>
+```
+
+## Flow Layout
+
+## Wichtige HTML-Elemente
+
+### Überschriften
+
+Überschriften werden über die Tags `h1-h6` angegeben. Die Zahlen 1-6 spezifizieren dabei die Hierarchieebene. Überschriften sind Block-Elemente.
+
+Beispiel für Überschriften:
+```html
+<h1>Überschrift Ebene 1</h1>
+<h2>Überschrift Ebene 2</h2>
+<h3>Überschrift Ebene 3</h3>
+<h4>Überschrift Ebene 4</h4>
+<h5>Überschrift Ebene 5</h5>
+<h6>Überschrift Ebene 6</h6>
+```
+
+### Paragraphen
+
+Zusammenhängende Textabschnitte werden als Paragraphen über das `p-Tag` angegeben. Paragraphen sind Block-Elemente.
+
+Beispiel für 2 Paragraphen:
+```html
+<p>Ein erster Paragraph</p>
+<p>Ein zweiter Paragraph</p>
+```
+
+### Geordnete oder Ungeordnete Listen
+
+Listen können über die Tags `ul` (ungeordnet) oder `ol` (geordnet) angegeben werden. Mit `li-Tags` werden Listeneinträge angegeben. Listeneinträge müssen dabei immer als Kindelemente von `li` oder `ol` angegeben werden.
+
+Beispiel für eine ungeordnete Liste:
+```html
+<ul>
+	<li>Eintrag 1</li>
+	<li>Eintrag 2</li>
+	<li>Eintrag 3</li>
+</ul>
+```
+
+Beispiel für eine geordnete Liste:
+```html
+<ol>
+	<li>Eintrag 1</li>
+	<li>Eintrag 2</li>
+	<li>Eintrag 3</li>
+</ol>
+```
+
+### Hyperlinks
+
+Hyperlinks spielen eine besondere Rolle in HTML da sie die Grundlage für den sog. Hypertext darstellen. Sie liefern die Möglichkeit um unterschiedliche Webseiten miteinander zu verknüpfen. Hyperlinks werden über das `a-Tag` relisiert (a gilt dabei als Abkürzung für Anchor). Wichtige Attribute von Hyperlinks sind `href` und `target`:
+ - Über `href` wird eine URL angegeben, welche das Ziel des Hyperlinks definiert.
+ - Über `target` gibt an wie das Hyperlink im Web-Browser geöffnet werden soll. Zum Beispiel wird mit der Angabe `_blank` ein neues Browserfenster oder ein neuer Tab (je nach Interpretation des Web-Browsers) geöffnet.
+
+### Bilder
+### Videos
+### Audio
+### Tabellen
+### Formulare
+
+# Glossar
 
 | Begriff | Beschreibung  |
 | --- | --- |
