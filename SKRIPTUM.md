@@ -6,7 +6,7 @@ Das WWW ist ein globales und verteiltes Informationssystem bestehend aus Webseit
 
 ## Technische Grundlagen
 
-Das technische Fundament für das WWW bildet das Internet. Das Internet ist ein globales Netzwerk (Internet = interconnected network), welches Computer und andere Computer Netzwerke (Intranets) miteinander verknüpft.
+Das technische Fundament für das WWW bildet das Internet. Das Internet ist ein globales Netzwerk (Internet = interconnected network), welches Computer und andere Computer Netzwerke (Intranets) miteinander verknüpft. Umgangsprachlich wird das WWW mit Internet oft gleichgesetzt. Aus einer technischen Perspektive ist dies jedoch nicht der Fall.
 
 ### Uniform Resource Locator (URL)
 
@@ -38,13 +38,28 @@ wikipedia.org        185.102.12.2
 fh-kufstein.ac.at    85.234.32.2
 ```
 
-Der Web-Browser nimmt in der Adresszeile einen URL engegeben, welcher unter anderem auch einen Domain-Namen enthält. Der Web-Browser würde im ersten Schritt einen DNS-Server anfragen um die IP-Adresse des entsprechenden Domain-Namen zu erhalten.
+Der Web-Browser nimmt in der Adresszeile einen URL entgegen, welcher unter anderem auch einen Domain-Namen enthält. Der Web-Browser würde im ersten Schritt einen DNS-Server anfragen um die IP-Adresse des entsprechenden Domain-Namen zu erhalten.
 
 ### HTTP-Protokoll
 
 
 
 ### Web-Browser
+
+Ein Web-Browser ist eine Software-Applikation welche genutzt wird um auf das WWW zuzugreifen. Die populärsten Web-Browser sind `Chrome`, `Firefox`, `Safari`, `Internet Explorer`, `Edge` und `Opera`.
+
+![Nutzungsstatistiken Web-Browser](images/StatCounter-browser-ww-monthly-200901-201905.png)
+
+Web-Browser bieten folgende ähnliche Bedienelemente:
+ - Eine `Adressleiste` zur Eingabe der URL welche geladen werden soll. Für gesicherte Verbindungen (https) wird dies über ein Schloss-Symbol angezeigt.
+ - Ein Button zum Neuladen einer Webseite (`Refresh` oder `Reload`)
+ - `Vor- und Zurück-Buttons` um in der Browser-Historie zu navigieren
+ - Einen `Stop-Button`, welcher das Laden einer Webseite abbricht
+ - Eine Eingabezeile zu Bedienung einer Suchmaschine (meistens als Teil der Adressleiste)
+ - `Tabs` um mehrere Webseiten gleichzeitig zu öffnen
+ - Der Titel einer Webseite bzw. das sog. Favicon werden im Tab angezeigt
+
+![Nutzungsstatistiken Web-Browser](images/web-browser-functions.png)
 
 ## W3C und Standardisierung
 
