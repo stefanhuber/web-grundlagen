@@ -60,8 +60,10 @@ Web-Browser bieten folgende ähnliche Bedienelemente:
  7. Innerhalb einer `Download-Historie` können vergangene Downloads wiedergefunden werden.
  8. Web-Browser können über `Extensions` erweitert werden.
 
-![Web-Browser Bedienelemente](images/web-browser-functions.png)
-
+<figure>
+  <img src="images/web-browser-functions.png">
+  <figcaption>A T-Rex on display in the Manchester University Museum.</figcaption>
+</figure>
 
 ## W3C und Standardisierung
 Das World Wide Web Consortium (W3C) ist die primäre internationale Standardisierungsorganisation des WWW. Das W3C ist für die Standadisierung der technischen Grundlagen des WWW zuständig. Gründer und Vorsitzender des W3C ist Tim Berners-Lee. Tim Berners-Lee ist der "Erfinder" des WWW.
@@ -208,7 +210,7 @@ Beispiel für 2 Paragraphen:
 <p>Ein zweiter Paragraph</p>
 ```
 
-### Geordnete oder Ungeordnete Listen
+### Geordnete oder ungeordnete Listen
 
 Listen können über die Tags `ul` (ungeordnet) oder `ol` (geordnet) angegeben werden. Mit `li-Tags` werden Listeneinträge angegeben. Listeneinträge müssen dabei immer als Kindelemente von `li` oder `ol` angegeben werden.
 
