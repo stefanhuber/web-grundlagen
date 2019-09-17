@@ -86,20 +86,84 @@ Zur Entwicklung von Webseiten bzw. Web-Anwendungen werden standardisierte Web-Te
 
 Die Hypertext Markup Language (HTML) ist eine textbasierte Auszeichnungssprache zur Strukturierung von Webseiten (in diesem Zusammenhant als HTML-Dokumente bezeichnet). HTML basiert auf sog. Tags, welche als Text Bausteine mit den Zeichen `<` bzw. `>` definiert werden. HTML dient dabei nur der Strukturierung der Inhalte und legt keinerlei Formatierung fest.
 
-## HTML-Markup
+## HTML-Markup Regeln
 
+Ein HTML-Element hat mehrere Bestandteile:
+ - Öffnendes Tag: Ein öffnendes Tag besteht aus den Klammersymbolen `<` und `>` und dem eingeschlossenen Tag-Name (zB `<p>`).
+ - Schließendes Tag: Ähnlich zum öffnenden Tag besteht das schließende Tag aus den Klammersymbolen `<` und `>` und dem eingeschlossenen Tag-Namen. Zusätzlich wird durch Angabe des Slash-Symbols (`/`) das schließende Tag markiert (zB `</p>`).
+ - Inhalt: Der tatsächliche Inhalt des HTML-Elements kann nur Text sein oder es können auch weitere HTML-Elemente als Kindelemente sein.
+ - Attribute: HTML-Elemente können Attribute besitzen, welche zusätzliche Informationen zum HTML-Element liefern, welche nicht Teil des Inhalts sind. Attribute und zugehörige Attributwerte werden im öffnenden Tag angegeben. Das Attribut wird über `=` vom Attributwert getrennt und der Attributwert wird in `"` gesetzt.
 
+Beispiel für ein HTML-Element:
+```html
+Öffnendes Tag       Schließendes Tag
+      ┌┴┐                 ┌┴─┐
+      <p>Ein HTML Beispiel</p>
+         └───────┬───────┘
+               Inhalt
+      └──────────┬───────────┘
+		     HTML-Element
+```
+
+Beispiel für ein HTML-Element mit Attribut:
+```html
+         Öffnendes Tag
+      ┌─────────┴────────┐                 
+      <p class="my-class">Ein HTML Beispiel</p>
+         └─┬─┘ └───┬────┘
+      Attribut   Attributwert      
+```
+
+Es gibt Außnahmen, welche nicht den oben beschriebenene allgemeinen Regelungen folgen:
+ - Leere HTML-Elemente: Es gibt HTML-Elemente, welche keinen expiziten textlichen Inhalt besitzen. Beispiele dafür sind: 
+   - `<br>`: Zeilenumbruch
+   - `<hr>`: Horizontale Trennline
+   - `<img>`: Bilder
+- Boolsche Attribute: Es gibt Attribute, welche keinerlei Attributwert benötigen. Eine Angabe des Attributes würde einen Attributwert `true` implizieren. Ein Beispiel für ein boolsches Attribut ist `disabled`.
+
+## Besondere syntaktische Konstrukte
+
+### HTML Kommentare
+
+In den meisten Programmier- bzw. Auszeichnungssprachen gibt es Kommentare, welche vom Web-Browser zur Generierung der Anzeige ignoriert werden.
+
+Kommentare werden mit der Symbolfolge `<!--` gestartet und mit `-->` beendet.
 
 ```html
-<p>Ein Paragraph mit <a href="http://example.com">Link</a>
-und <em>hervorgehobener Textauszeichnung</em>.</p>
+<!-- Ein Beispiel Kommentar -->
+```
+
+### HTML Entities
+
+Es gibt unter anderem die Zeichen `<`, `>`, `"`, `&` welche Teil der HTML Syntax sind. Diese Zeichen müssen als spezielle `HTML-Entity` angegeben werden.
+
+Eine HTML-Entity wird über ein `&` gestaret und mit einem `;` abgeschlossen. Dazwischen befindet sich ein Entitiy Bezeichner.
+
+Beispiele für HTML-Entities:
+| Zeichen | HTML-Entity  |
+| --- | --- |
+| `<` | `&lt;` |
+| `>` | `&gt;` |
+| `"` | `&quot;` |
+| `&` | `&amp;` |
+
+### Whitespace
+
+Als Whitespace werden jegliche Leerräume, Tabulatoren und Zeilenumbrüche bezeichnet. Für die Darstellung von HTML hat Whitespace keine bedeutung. Der Web-Browser ignoriert Whitespace generell und reduziert Whitespace zwischen 2 Wörtern auf genau einen Leerraum.
+
+Die beiden Paragraphen im folgenden Beispiel resultieren in der selben Anzeige:
+```html
+<p>Beispiel für Whitespace</p>
+
+<p>Beispiel        für
+         Whitespace.</p>
 ```
 
 ## Aufbau eines HTML-Dokumentes
 
 HTML-Dokumente haben einen definierten Aufbau:
 
- - Ein HTML-Dokument startet mit einem Doctype, welcher die Version von HTML angibt (hier: HTML 5). Dem Web-Browser wird damit mitgeteilt, welche HTML-Version zu verarbeiten ist.
+ - Ein HTML-Dokument startet mit einem `Doctype`, welcher die Version von HTML angibt (hier: HTML 5). Dem Web-Browser wird damit mitgeteilt, welche HTML-Version zu verarbeiten ist.
  - Ein HTML-Dokument hat `html` als Wurzelelement und 2 Kindelemente `head` und `body`
  - Im `head` befinden sich sog. Metadaten zum Dokument (zumindest der Titel, angegeben durch das `title` Element)
  - Im `body` befinden sich alle Inhalte, welche im Web-Browser dargestellt werden
@@ -151,18 +215,18 @@ Listen können über die Tags `ul` (ungeordnet) oder `ol` (geordnet) angegeben w
 Beispiel für eine ungeordnete Liste:
 ```html
 <ul>
-	<li>Eintrag 1</li>
-	<li>Eintrag 2</li>
-	<li>Eintrag 3</li>
+  <li>Eintrag 1</li>
+  <li>Eintrag 2</li>
+  <li>Eintrag 3</li>
 </ul>
 ```
 
 Beispiel für eine geordnete Liste:
 ```html
 <ol>
-	<li>Eintrag 1</li>
-	<li>Eintrag 2</li>
-	<li>Eintrag 3</li>
+  <li>Eintrag 1</li>
+  <li>Eintrag 2</li>
+  <li>Eintrag 3</li>
 </ol>
 ```
 
@@ -172,10 +236,47 @@ Hyperlinks spielen eine besondere Rolle in HTML da sie die Grundlage für den so
  - Über `href` wird eine URL angegeben, welche das Ziel des Hyperlinks definiert.
  - Über `target` gibt an wie das Hyperlink im Web-Browser geöffnet werden soll. Zum Beispiel wird mit der Angabe `_blank` ein neues Browserfenster oder ein neuer Tab (je nach Interpretation des Web-Browsers) geöffnet.
 
+Beispiel für ein Hyperlink:
+```html
+<a target="_blank" href="https://www.fh-kufsteinn.ac.at">Link</a>
+```
+
 ### Bilder
-### Videos
-### Audio
+
+
+
 ### Tabellen
+Zur Darstellung von tabellarischen Daten werden Tabellen benutzt. Tabellen sollen in keinem Fall dazu verwendet werden um Layouts zu erzeugen.
+
+Über das `table-Tag` kann eine Tabelle definiert werden. Zeilen in einer Tabelle werden über das `tr-Tag` erzeugt. Innerhalb der Zeilen können Zellen definiert werden mit `td-Tags` (td für Tabledata). Für die Kopfzeile können Zellen mittels `th-Tags` definiert werden.
+
+```html
+<table>
+  <tr>
+    <th>Band</th>
+    <th>Album</th>
+    <th>Veröffentlichungsjahr</th>
+  </tr>
+  <tr>
+    <td>U2</td>
+    <td>Boy</td>
+    <td>1980</td>
+  </tr>
+  <tr>
+    <td>Radiohead</td>
+    <td>OK Computer</td>
+    <td>1997</td>
+  </tr>
+  <tr>
+    <td>The Mars Volta</td>
+    <td>De-Loused in the Comatorium</td>
+    <td>2003</td>
+  </tr>  
+</table>
+```
+
+In manchen Fällen ist es nötig Zellen in einer Tabelle über mehrere Spalten oder Zeilen zu verteilen. Mit den Attributen `colspan` bzw. `rowspan` kann für eine Zelle definiert werden über wieviele Spalten bzw. Zeilen diese verteilt werden soll.
+
 ### Formulare
 
 # Glossar
