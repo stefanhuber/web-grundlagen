@@ -60,10 +60,7 @@ Web-Browser bieten folgende ähnliche Bedienelemente:
  7. Innerhalb einer `Download-Historie` können vergangene Downloads wiedergefunden werden.
  8. Web-Browser können über `Extensions` erweitert werden.
 
-<figure>
-  <img src="images/web-browser-functions.png">
-  <figcaption>A T-Rex on display in the Manchester University Museum.</figcaption>
-</figure>
+![Web-Browser Bedienelemente](images/web-browser-functions.png)
 
 ## W3C und Standardisierung
 Das World Wide Web Consortium (W3C) ist die primäre internationale Standardisierungsorganisation des WWW. Das W3C ist für die Standadisierung der technischen Grundlagen des WWW zuständig. Gründer und Vorsitzender des W3C ist Tim Berners-Lee. Tim Berners-Lee ist der "Erfinder" des WWW.
@@ -184,6 +181,8 @@ HTML-Dokumente haben einen definierten Aufbau:
 
 ## Flow Layout
 
+
+
 ## Wichtige HTML-Elemente
 
 ### Überschriften
@@ -198,6 +197,15 @@ Beispiel für Überschriften:
 <h4>Überschrift Ebene 4</h4>
 <h5>Überschrift Ebene 5</h5>
 <h6>Überschrift Ebene 6</h6>
+```
+
+### Textauszeichnung
+
+Um Textstellen gesondert hervorzuheben können die Tags `strong` oder `em` verwendet werden.
+
+Beispiel für Hervorhebungen:
+```html
+Das ist ein <strong>wichtiger</strong> Textabschnitt und dies ist ein <em>hervorgehobener</em> Textabschnitt.
 ```
 
 ### Paragraphen
@@ -245,7 +253,12 @@ Beispiel für ein Hyperlink:
 
 ### Bilder
 
+Um Bilder in einer Webseite einzufügen wird das `img-Tag` genutzt. Das Tag stellt das Attribut `src` bereit um eine URL auf ein Bild anzugeben. Mit dem Attribut `alt` wird die Möglichkeit bereitgestellt eine textliche Beschreibung des Bildinhalts zu geben. Dies kann zum Beispiel für Suchmaschinenoptimierung oder aber auch aus Gründen der Accessibility genutzt werden.
 
+Beispiel für ein Bild:
+```html
+<img src="images/dinosaur.jpg" alt="Kopf und Toros eines Dinosaurierskelet">
+```
 
 ### Tabellen
 Zur Darstellung von tabellarischen Daten werden Tabellen benutzt. Tabellen sollen in keinem Fall dazu verwendet werden um Layouts zu erzeugen.
@@ -280,6 +293,69 @@ Zur Darstellung von tabellarischen Daten werden Tabellen benutzt. Tabellen solle
 In manchen Fällen ist es nötig Zellen in einer Tabelle über mehrere Spalten oder Zeilen zu verteilen. Mit den Attributen `colspan` bzw. `rowspan` kann für eine Zelle definiert werden über wieviele Spalten bzw. Zeilen diese verteilt werden soll.
 
 ### Formulare
+
+Formulare werden genutzt um Benutzereingaben zu ermöglichen. Die eingegebenen Daten können direkt an einen Web-Server gesendet werden oder auch lokal verarbeitet werden.
+
+Jedes Formular wird über ein `form-Tag` umgeben. Innerhalb eines Formular befinden sich Formularfelder. Gängige Formularfelder sind ein- oder mehrzeilige Textfelder, Auswahlfelder, Radio-Buttons oder Datumsfelder.
+
+Einzelne Formularfelder können über das Tag `fieldset` gruppiert werden. Ein Fieldset kann über das `legend-Tag` eine entsprechende Beschriftung bekommen. Beschriftungen für einzelne Formularfelder können ebenfalls mit dem Tag `label` durchgeführt werden. Das `label-Tag` stellt das Attribut `for` bereit mit dem das Attribut `id` eines entsprechenden Formularfeldes referenziert wird.
+
+Beispiel eines HTML-Formulars mit Text, Datums und Radio-Button Eingaben:
+```html
+<form>
+  <p>
+    <label for="input-name">Name</label>
+    <input type="text" placeholder="Name" id="input-name" name="name">
+  </p>
+  <p>
+    <label for="input-birthday">Geburtstag</label>
+    <input type="date" placeholder="Geburtstag" id="input-birthday" name="birthday">
+  </p>
+  <fieldset>
+    <legend>Priorität</legend>
+    <p>
+      <label for="input-priority-1">
+        <input id="input-priority-1" type="radio" name="priority" value="1"> Hoch
+      </label>
+    </p>
+    <p>
+      <label for="input-priority-2">
+        <input id="input-priority-2" type="radio" name="priority" value="2"> Mittel
+      </label>
+    </p>
+    <p>
+      <label for="input-priority-3">
+        <input id="input-priority-3" type="radio" name="priority" value="3"> Niedrig
+      </label>
+    </p>
+  </fieldset>
+  <label>
+</form>
+```
+
+## Strukturierung eins HTML-Dokumentes
+
+Im Beispiel wird ein typischer Aufbau einer Webseite skizziert. HTML stellt Elemente bereit, welche eine spezifische Bedeutung für den Inhalt implizieren. Diese Elemente sollen zur Strukturierung verwendet werden, sodass das HTML-Markup Bedeutung erhält. Für Web-Crawler oder Assistenztechnologien (zB Braille-Browser, Screenreader) kann die Webseite somit auch interpretiert werden.
+
+![Beispiel Website](images/sample-website-structure.png)
+
+Folgend sollen die wichtigsten Struktur-Elemente kurz beschrieben werden:
+
+ - `<main>`: Dieses Tag sollte nur einmal pro Webseite verwendet werden und soll als Wrapper für die wesentlichen Inhalte der Webseite fungieren.
+ - `<article>`: Schließt einen zusammenhängenden Inhalt ein, welcher für sich stehen kann.
+ - `<section>`: Gruppierungselement um einen zusammenhängenden Teil einer Webseite zu gruppieren.
+ - `<aside>`: Nicht direkt mit dem `<main>` Inhalt verknüpfte Inhalte.
+ - `<nav>`: Enthält die Hauptnavigation der Website.
+ - `<header>`: Stellt einleitenden Inhalt dar. 
+ - `<footer>`: Stellt abschließenden Inhalt dar.
+
+## Validität von HTML
+
+Um eine korrekte Interpretation des HTML-Dokumentes zu gewährleisten, muss sichergestellt werden, dass keinerlei syntaktische Fehler im HTML-Markup vorherrschen. HTML-Validatoren können genutzt werden um ein HTML-Dokument automatisiert auf syntaktische Fehler zu prüfen.
+
+Das W3C stellt einen standardkonformen HTML-Validator zur Verfügung ([https://validator.w3.org](https://validator.w3.org)). Dieser Validator unterscheidet zwischen Fehlern (Error) und Warnungen (Warning):
+ - Fehler sollten immer behoben werden, da dies ein konkretes syntaktisches Problem bezeichnet.
+ - Warnung können behoben werden, diese sind vorranging für Barrierefreiheit und Suchmaschinen vorteilhaft.
 
 # Glossar
 
