@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Stefan Huber">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>01 Einführung - Web-Grundlagen</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "01 Einf\u00fchrung";
+    var mkdocs_page_input_path = "01_Einf\u00fchrung.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Web-Grundlagen</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">01 Einführung</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#world-wide-web-www">World Wide Web (WWW)</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#technische-grundlagen">Technische Grundlagen</a></li>
+        
+            <li><a class="toctree-l3" href="#w3c-und-standardisierung">W3C und Standardisierung</a></li>
+        
+            <li><a class="toctree-l3" href="#clientseitige-web-technologien">Clientseitige Web-Technologien</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../02_HTML/">02 HTML</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../03_CSS/">03 CSS</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../04_Grafik/">04 Grafik im WWW</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../05_CSS_Layouts/">05 Layouts und Positionierung</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../05_Responsive_Web/">05 Responsive Web</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../08_Praktische_Aspekte/">08 Praktische Aspekte</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Web-Grundlagen</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>01 Einführung</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/stefanhuber/web-grundlagen/edit/master/docs/01_Einführung.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="world-wide-web-www">World Wide Web (WWW)</h1>
+<p>Das WWW ist ein globales und verteiltes Informationssystem bestehend aus <em>Webseiten</em> und anderen <em>Web-Ressourcen</em> (zB Bilder, Videos, ...). Web-Ressourcen werden auf Web-Servern bereitgestellt und sind öffentlich abrufbar. Web-Ressourcen sind über einen Uniform Resource Locator (URL) eindeutig identifiziert und abrufbar. Webseiten sind im WWW über <em>Hyperlinks</em> miteinander verknüpft, welche wiederum als URL ausgedrückt werden. Webseiten können über <em>Web-Browser</em> (auch Web-Clients genannt) geladen und bedient werden.</p>
+<p><img alt="World Wide Web" src="../images/003-www.svg" title="World Wide Web" /></p>
+<h2 id="technische-grundlagen">Technische Grundlagen</h2>
+<p>Das technische Fundament für das WWW bildet das Internet. Das Internet ist ein globales Netzwerk (Internet = interconnected network), welches Computer und andere Computer Netzwerke (Intranets) miteinander verknüpft. Umgangsprachlich wird das WWW mit dem Internet oft gleichgesetzt. Aus einer technischen Perspektive ist dies jedoch nicht der Fall.</p>
+<h3 id="uniform-resource-locator-url">Uniform Resource Locator (URL)</h3>
+<p>Eine URL ist eine global eindeutige "Adresse" einer Web-Ressource. Zusätzlich zur Identifikation gibt eine URL Aufschluss über den Speicherort einer Web-Ressource. Ein Web-Browser kann über eine URL Web-Ressourcen abrufen und anzeigen. URLs folgen einem definierten syntaktischen Aufbau:</p>
+<ul>
+<li>Schema (Scheme): Das Schema gibt den Typ der URL an. Bekannte Schemata sind zB <code>http</code>, <code>https</code>, <code>ftp</code> oder <code>mailto</code>. Die Schemaangabe wird mit einem <code>:</code> abgeschlossen.</li>
+<li>Zuständigkeit (Authority): Wesentlicher Bestandteil der Authority ist der <code>Host</code>, welcher als Domain-Name oder IP-Adresse angegeben werden kann. Optional kann die Authority eine Benutzerinformation enthalten, welche vor der Host-Angabe steht (Abgeschlossen durch ein <code>@</code>). Optional kann auch eine Port-Angabe angebracht werden (Eingeleitet durch einen <code>:</code>).</li>
+<li>Pfad (Path): Der Pfad ist eine hierarchische Angabe einer konkreten Ressource innerhalb einer Authority. Alle Pfadbestandteile werden ähnlich zu einem Dateisystem mittels <code>/</code> getrennt.</li>
+<li>Abfrage (Query): Der Abfrage-Teil (Query-String) wird genutzt um optionale Schlüssel-Wert Paare anzugeben. Ein Query-String wird über ein <code>?</code> eingeleitet. Schlüssel-Wert Paare werden jeweils über <code>&amp;</code> getrennt. Mit <code>=</code> wird jeweils der Schlüssel mit dem zugehörigen Wert verknüpft.</li>
+<li>Fragment: Fragmente können genutzt werden um Teile eine Ressource zu identifizieren, zB als Anker innerhalb einer Webseite. Fragmente werden über ein <code>#</code> eingeleitet.</li>
+</ul>
+<p>Beispiel einer URL:</p>
+<pre><code>        userinfo       host      port
+        ┌──┴───┐ ┌──────┴──────┐ ┌┴┐
+https://john.doe@www.example.com:123/abc/def/?name=bla&amp;q=abc#top
+└─┬─┘   └───────────┬──────────────┘└───┬───┘ └─────┬──────┘ └┬┘
+scheme          authority              path       query    fragment
+</code></pre>
+
+<h3 id="domain-name-system-dns">Domain Name System (DNS)</h3>
+<p>Das Internet basiert auf dem TCP/IP Netzwerk-Stack (Internetprotokollfamilie). Im TCP/IP Netzwerk-Stack werden alle Knoten des Netzwerkes über eine IP-Adresse identifiziert. IP-Adressen sind ähnlich wie Telefonnummern für Menschen schwer einprägsam. DNS ist ein Internet-Dienst welcher, ähnlich zu einem Telefonbuch, Klarnamen zu IP-Adressen verwaltet und abrufbar macht.</p>
+<p>Beispielhafter Auszug aus der Datenbank eines DNS-Servers:</p>
+<pre><code>wikipedia.org         185.102.12.2
+fh-kufstein.ac.at     85.234.32.2
+...                   ...
+</code></pre>
+
+<p>Typischer Ablauf einer DNS-Abfrage:
+<img alt="DNS-Abfrage" src="../images/001-DNS-Anfrage.svg" title="DNS-Abfrage" /></p>
+<p>Der Web-Browser nimmt in der Adresszeile einen URL entgegen, welcher unter anderem auch einen Domain-Namen enthält. Der Web-Browser macht im ersten Schritt eine Anfrage an den DNS-Server um die IP-Adresse des entsprechenden Domain-Namen zu erhalten. Erst nach Erhalt der IP-Adresse kann eine HTTP-Anfrage an den entsprechenden Web-Server gesendet werden.</p>
+<h3 id="http-protokoll">HTTP-Protokoll</h3>
+<p>Das Hypertext Transfer Protocol (HTTP) ist ein zustandsloses Netzwerkprotokoll zur Übertragung von Daten in Rechnernetzen. Es wird hauptsächlich eingesetzt, um Webseiten aus dem WWW zu laden. Es ist jedoch nicht prinzipiell darauf beschränkt und auch als allgemeines Dateiübertragungsprotokoll verbreitet.</p>
+<p>Die Kommunikation findet dabei zwischen einem Client und Server statt. Die Kommunikation folgt dem Anfrage/Antwort Schema. Der Client sendet eine Anfrage und bekommt eine Antwort vom Server.</p>
+<p><img alt="HTTP-Protokoll" src="../images/002-HTTP-Protokoll.svg" title="HTTP-Protokoll Ablauf" /> </p>
+<h3 id="web-browser">Web-Browser</h3>
+<p>Ein Web-Browser ist eine Software-Applikation, welche genutzt wird um auf das WWW zuzugreifen. Die populärsten Web-Browser sind <code>Chrome</code>, <code>Firefox</code>, <code>Safari</code>, <code>Internet Explorer</code>, <code>Edge</code> und <code>Opera</code>.</p>
+<p><img alt="Nutzungsstatistiken Web-Browser" src="../images/004-Browser-Statistik.png" title="Nutzungsstatistiken Web-Browser" /></p>
+<p>Web-Browser bieten folgende ähnliche Bedienelemente:</p>
+<ol>
+<li><code>Tabs</code> um mehrere Webseiten gleichzeitig zu öffnen. Der <code>Titel</code> einer Webseite bzw. das sog. <code>Favicon</code> werden ebenfalls im Tab angezeigt.</li>
+<li>Eine <code>Adressleiste</code> zur Eingabe der URL welche geladen werden soll. Für gesicherte Verbindungen (https) wird dies über ein <code>Schloss-Symbol</code> angezeigt. Die Adressleiste fungiert meist auch als <code>Eingabezeile für Suchmaschinen</code>.</li>
+<li><code>Vor- und Zurück-Buttons</code> um in der Browser-Historie zu navigieren.</li>
+<li>Ein Button zum Neuladen einer Webseite (<code>Refresh</code> oder <code>Reload</code>). Während des Ladens fungiert dieser als <code>Stop-Button</code> um das Laden abzubrechen.</li>
+<li>Ein <code>Home-Button</code> läd eine hinterlegte Home-Seite.</li>
+<li>Mittels <code>Bookmarks/Lesezeichen</code> können Links auf Webseiten katalogisiert gespeichert werden.</li>
+<li>Innerhalb einer <code>Download-Historie</code> können vergangene Downloads wiedergefunden werden.</li>
+<li>Web-Browser können über <code>Extensions</code> erweitert werden.</li>
+</ol>
+<p><img alt="Web-Browser Bedienelemente" src="../images/005-Web-Browser-Funktionen.png" title="Web-Browser Bedienelemente" /></p>
+<h2 id="w3c-und-standardisierung">W3C und Standardisierung</h2>
+<p>Das World Wide Web Consortium (W3C) ist die primäre internationale Standardisierungsorganisation des WWW. Das W3C ist für die Standadisierung der technischen Grundlagen des WWW zuständig. Gründer und Vorsitzender des W3C ist Tim Berners-Lee. Tim Berners-Lee ist der "Erfinder" des WWW.</p>
+<p>Der W3C Standadisierungsprozess gliedert sich in Dokumente mit unterschiedlichem Reifegrad:</p>
+<ul>
+<li>Working Draft (WD): Über Arbeitsentwürfe unter Einbeziehung der Öffentlichkeit wird ein Standardisierungsdokument entwickelt</li>
+<li>Candidate Recommendation (CR): Stabiles Dokument, für welches bereits Implementierungen durchgeführt werden</li>
+<li>Proposed Recommendation (PR): Ein PR hat den CR-Status finalisiert und wird an den W3C Advisory Council weitergegeben für eine finale Zustimmung.</li>
+<li>W3C Recommendation (REC): Nach Zustimmung des W3C Advisory Council wird die PR zur W3C-Recommendation bzw. W3C Standard.</li>
+</ul>
+<blockquote>
+<p>Beispiele für W3C Recommendations sind HTML, XML, CSS, PNG, SVG, DOM.</p>
+</blockquote>
+<h2 id="clientseitige-web-technologien">Clientseitige Web-Technologien</h2>
+<p>Zur Entwicklung von Webseiten bzw. Web-Anwendungen werden standardisierte Web-Technologien genutzt:</p>
+<ul>
+<li>Hypertext Markup Language (HTML): HTML wird genutzt um Inhalte zu strukturieren</li>
+<li>Cascading Stylesheets (CSS): CSS wird genutzt um Inhalte zu formatierung bzw. zu gestalten</li>
+<li>JavaScript: Mit JavaScript wird Verhalten und Dynamik in eine Webseite integriert</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../02_HTML/" class="btn btn-neutral float-right" title="02 HTML">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>CC-BY-SA / Stefan Huber</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/stefanhuber/web-grundlagen/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+        <span style="margin-left: 15px"><a href="../02_HTML/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

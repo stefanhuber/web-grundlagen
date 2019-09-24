@@ -1,0 +1,37 @@
+site_name: Web-Grundlagen
+site_description: Skriptum zur Lehrveranstaltung Web-Grundlagen
+site_author: Stefan Huber
+
+repo_url: https://github.com/stefanhuber/web-grundlagen
+
+nav:
+  - 'Home': 'index.md'
+  - 'Web-Grundlagen':
+    - 'Einführung': 'texts/01_Einführung.md'
+    - 'HTML': 'texts/02_HTML.md'
+    - 'CSS': 'texts/03_CSS.md'
+    - 'Grafik im WWW': 'texts/04_Grafik.md'
+    - 'Layouts und Positionierung': 'texts/05_CSS_Layouts.md'
+    - 'Responsive Web': 'texts/06_Responsive_Web.md'
+    - 'Praktische Aspekte': 'texts/07_Praktische_Aspekte.md'
+  - 'Übungen':
+    - 'Übung 1': 'exercises/01.md'
+    - 'Übung 2': 'exercises/02.md'
+
+
+theme: 
+  name: material
+  language: de
+
+copyright: 'CC-BY-SA / Stefan Huber'
+
+docs_dir: content
+site_dir: docs
+
+extra:
+  search:
+    language: de
+
+markdown_extensions:
+  - codehilite
+  - admonition

@@ -1,0 +1,72 @@
+body {
+    font-family: Tahoma,Geneva,sans-serif;
+}
+
+.remark-slide-content {
+    padding: 0 50px 25px 50px;
+    font-size: 24px;
+}
+
+.remark-slide-content em {
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.remark-slide-content li::marker {
+    color: #097255;
+}
+
+.remark-slide-content h1 {
+    display:flex;
+    align-items:center;
+    height:115px;
+    font-size:30px;
+    padding: 0 190px 0 50px;
+    margin: 0 -50px;
+    border-bottom: 2px solid #097255;
+    color:#3c3c3b;
+}
+
+.remark-slide-content h1::after {
+    content:"";
+    background-image: url(fh-logo.svg);
+    background-repeat: no-repeat;
+    width:100px;
+    height:70px;
+    position: absolute;
+    right: 50px;
+}
+
+.remark-slide-content blockquote {
+    background: rgba(151,194,53);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px 0;
+    color: white;
+}
+
+.remark-slide-content blockquote p {
+    margin:0;
+    padding:0;
+}
+
+.remark-slide-number {
+    font-size:15px;
+}
+
+.remark-code, .remark-inline-code {
+    font-family: monospace;
+}
+
+.center {
+    text-align:center;
+}
+
+.max {
+    display:block;
+    max-width:100%;
+}
+.max img {
+    max-width: 75%;
+}
+
