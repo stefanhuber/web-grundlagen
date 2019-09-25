@@ -177,7 +177,7 @@ Hyperlinks spielen eine besondere Rolle in HTML da sie die Grundlage für den so
 
 Beispiel für ein Hyperlink:
 ```html
-<a target="_blank" href="https://www.fh-kufsteinn.ac.at">Link</a>
+<a target="_blank" href="https://www.fh-kufstein.ac.at">Link</a>
 ```
 
 ### Bilder

@@ -1,0 +1,1087 @@
+
+
+
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Skriptum zur Lehrveranstaltung Web-Grundlagen">
+      
+      
+      
+        <meta name="author" content="Stefan Huber">
+      
+      
+        <meta name="lang:clipboard.copy" content="In Zwischenablage kopieren">
+      
+        <meta name="lang:clipboard.copied" content="In Zwischenablage kopiert">
+      
+        <meta name="lang:search.language" content="de">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Keine Suchergebnisse">
+      
+        <meta name="lang:search.result.one" content="1 Suchergebnis">
+      
+        <meta name="lang:search.result.other" content="# Suchergebnisse">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>HTML - Web-Grundlagen</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#html" tabindex="1" class="md-skip">
+        Zum Inhalt
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Web-Grundlagen" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Web-Grundlagen
+            </span>
+            <span class="md-header-nav__topic">
+              
+                HTML
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Suchbegriff eingeben
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/stefanhuber/web-grundlagen/" title="Quellcode" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Web-Grundlagen" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Web-Grundlagen
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/stefanhuber/web-grundlagen/" title="Quellcode" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Web-Grundlagen
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Web-Grundlagen
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../01_Einführung/" title="Einführung" class="md-nav__link">
+      Einführung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        HTML
+      </label>
+    
+    <a href="./" title="HTML" class="md-nav__link md-nav__link--active">
+      HTML
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#html-markup-regeln" class="md-nav__link">
+    HTML-Markup Regeln
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#besondere-syntaktische-konstrukte" class="md-nav__link">
+    Besondere syntaktische Konstrukte
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html-kommentare" class="md-nav__link">
+    HTML Kommentare
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html-entities" class="md-nav__link">
+    HTML Entities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitespace" class="md-nav__link">
+    Whitespace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-eines-html-dokuments" class="md-nav__link">
+    Aufbau eines HTML-Dokuments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flow-layout" class="md-nav__link">
+    Flow Layout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wichtige-html-elemente" class="md-nav__link">
+    Wichtige HTML-Elemente
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uberschriften" class="md-nav__link">
+    Überschriften
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textauszeichnung" class="md-nav__link">
+    Textauszeichnung
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paragraphen" class="md-nav__link">
+    Paragraphen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geordnete-oder-ungeordnete-listen" class="md-nav__link">
+    Geordnete oder ungeordnete Listen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperlinks" class="md-nav__link">
+    Hyperlinks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bilder" class="md-nav__link">
+    Bilder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabellen" class="md-nav__link">
+    Tabellen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formulare" class="md-nav__link">
+    Formulare
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strukturierung-eines-html-dokuments" class="md-nav__link">
+    Strukturierung eines HTML-Dokuments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validitat-von-html" class="md-nav__link">
+    Validität von HTML
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03_CSS/" title="CSS" class="md-nav__link">
+      CSS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04_Grafik/" title="Grafik im WWW" class="md-nav__link">
+      Grafik im WWW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05_CSS_Layouts/" title="Layouts und Positionierung" class="md-nav__link">
+      Layouts und Positionierung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06_Responsive_Web/" title="Responsive Web" class="md-nav__link">
+      Responsive Web
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07_Praktische_Aspekte/" title="Praktische Aspekte" class="md-nav__link">
+      Praktische Aspekte
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Übungen
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Übungen
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../exercises/01/" title="Übung 1" class="md-nav__link">
+      Übung 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../exercises/02/" title="Übung 2" class="md-nav__link">
+      Übung 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#html-markup-regeln" class="md-nav__link">
+    HTML-Markup Regeln
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#besondere-syntaktische-konstrukte" class="md-nav__link">
+    Besondere syntaktische Konstrukte
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html-kommentare" class="md-nav__link">
+    HTML Kommentare
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html-entities" class="md-nav__link">
+    HTML Entities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitespace" class="md-nav__link">
+    Whitespace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-eines-html-dokuments" class="md-nav__link">
+    Aufbau eines HTML-Dokuments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flow-layout" class="md-nav__link">
+    Flow Layout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wichtige-html-elemente" class="md-nav__link">
+    Wichtige HTML-Elemente
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uberschriften" class="md-nav__link">
+    Überschriften
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textauszeichnung" class="md-nav__link">
+    Textauszeichnung
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paragraphen" class="md-nav__link">
+    Paragraphen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geordnete-oder-ungeordnete-listen" class="md-nav__link">
+    Geordnete oder ungeordnete Listen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperlinks" class="md-nav__link">
+    Hyperlinks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bilder" class="md-nav__link">
+    Bilder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabellen" class="md-nav__link">
+    Tabellen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formulare" class="md-nav__link">
+    Formulare
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strukturierung-eines-html-dokuments" class="md-nav__link">
+    Strukturierung eines HTML-Dokuments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validitat-von-html" class="md-nav__link">
+    Validität von HTML
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/stefanhuber/web-grundlagen/edit/master/docs/texts/02_HTML.md" title="Seite editieren" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="html">HTML</h1>
+<p>Die Hypertext Markup Language (HTML) ist eine textbasierte Auszeichnungssprache zur Strukturierung von Webseiten (in diesem Zusammenhant als HTML-Dokumente bezeichnet). HTML basiert auf sog. Tags, welche als Text Bausteine mit den Zeichen <code>&lt;</code> bzw. <code>&gt;</code> definiert werden. HTML dient dabei nur der Strukturierung der Inhalte und legt keinerlei Formatierung fest.</p>
+<h2 id="html-markup-regeln">HTML-Markup Regeln</h2>
+<p>Ein HTML-Element hat mehrere Bestandteile:
+ - Öffnendes Tag: Ein öffnendes Tag besteht aus den Klammersymbolen <code>&lt;</code> und <code>&gt;</code> und dem eingeschlossenen Tag-Name (zB <code>&lt;p&gt;</code>).
+ - Schließendes Tag: Ähnlich zum öffnenden Tag besteht das schließende Tag aus den Klammersymbolen <code>&lt;</code> und <code>&gt;</code> und dem eingeschlossenen Tag-Namen. Zusätzlich wird durch Angabe des Slash-Symbols (<code>/</code>) das schließende Tag markiert (zB <code>&lt;/p&gt;</code>).
+ - Inhalt: Der tatsächliche Inhalt des HTML-Elements kann nur Text sein oder es können auch weitere HTML-Elemente als Kindelemente sein.
+ - Attribute: HTML-Elemente können Attribute besitzen, welche zusätzliche Informationen zum HTML-Element liefern, welche nicht Teil des Inhalts sind. Attribute und zugehörige Attributwerte werden im öffnenden Tag angegeben. Das Attribut wird über <code>=</code> vom Attributwert getrennt und der Attributwert wird in <code>"</code> gesetzt.</p>
+<p>Beispiel für ein HTML-Element:</p>
+<div class="codehilite"><pre><span></span>Öffnendes Tag       Schließendes Tag
+      ┌┴┐                 ┌┴─┐
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ein HTML Beispiel<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+         └───────┬───────┘
+               Inhalt
+      └──────────┬───────────┘
+             HTML-Element
+</pre></div>
+
+
+<p>Beispiel für ein HTML-Element mit Attribut:</p>
+<div class="codehilite"><pre><span></span>         Öffnendes Tag
+      ┌─────────┴────────┐                 
+      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;my-class&quot;</span><span class="p">&gt;</span>Ein HTML Beispiel<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+         └─┬─┘ └───┬────┘
+      Attribut   Attributwert      
+</pre></div>
+
+
+<p>Es gibt Außnahmen, welche nicht den oben beschriebenene allgemeinen Regelungen folgen:
+ - Leere HTML-Elemente: Es gibt HTML-Elemente, welche keinen expiziten textlichen Inhalt besitzen. Beispiele dafür sind: 
+   - <code>&lt;br&gt;</code>: Zeilenumbruch
+   - <code>&lt;hr&gt;</code>: Horizontale Trennline
+   - <code>&lt;img&gt;</code>: Bilder
+- Boolsche Attribute: Es gibt Attribute, welche keinerlei Attributwert benötigen. Eine Angabe des Attributes würde einen Attributwert <code>true</code> implizieren. Ein Beispiel für ein boolsches Attribut ist <code>disabled</code>.</p>
+<h2 id="besondere-syntaktische-konstrukte">Besondere syntaktische Konstrukte</h2>
+<h3 id="html-kommentare">HTML Kommentare</h3>
+<p>In den meisten Programmier- bzw. Auszeichnungssprachen gibt es Kommentare, welche vom Web-Browser zur Generierung der Anzeige ignoriert werden.</p>
+<p>Kommentare werden mit der Symbolfolge <code>&lt;!--</code> gestartet und mit <code>--&gt;</code> beendet.</p>
+<div class="codehilite"><pre><span></span><span class="c">&lt;!-- Ein Beispiel Kommentar --&gt;</span>
+</pre></div>
+
+
+<h3 id="html-entities">HTML Entities</h3>
+<p>Es gibt unter anderem die Zeichen <code>&lt;</code>, <code>&gt;</code>, <code>"</code>, <code>&amp;</code> welche Teil der HTML Syntax sind. Diese Zeichen müssen als spezielle <code>HTML-Entity</code> angegeben werden.</p>
+<p>Eine HTML-Entity wird über ein <code>&amp;</code> gestaret und mit einem <code>;</code> abgeschlossen. Dazwischen befindet sich ein Entitiy Bezeichner.</p>
+<p>Beispiele für HTML-Entities:</p>
+<table>
+<thead>
+<tr>
+<th>Zeichen</th>
+<th>HTML-Entity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;</code></td>
+<td><code>&amp;lt;</code></td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td><code>&amp;gt;</code></td>
+</tr>
+<tr>
+<td><code>"</code></td>
+<td><code>&amp;quot;</code></td>
+</tr>
+<tr>
+<td><code>&amp;</code></td>
+<td><code>&amp;amp;</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="whitespace">Whitespace</h3>
+<p>Als Whitespace werden jegliche Leerräume, Tabulatoren und Zeilenumbrüche bezeichnet. Für die Darstellung von HTML hat Whitespace keine bedeutung. Der Web-Browser ignoriert Whitespace generell und reduziert Whitespace zwischen 2 Wörtern auf genau einen Leerraum.</p>
+<p>Die beiden Paragraphen im folgenden Beispiel resultieren in der selben Anzeige:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Beispiel für Whitespace<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Beispiel        für
+         Whitespace.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<h2 id="aufbau-eines-html-dokuments">Aufbau eines HTML-Dokuments</h2>
+<p>HTML-Dokumente haben einen definierten Aufbau:</p>
+<ul>
+<li>Ein HTML-Dokument startet mit einem <code>Doctype</code>, welcher die Version von HTML angibt (hier: HTML 5). Dem Web-Browser wird damit mitgeteilt, welche HTML-Version zu verarbeiten ist.</li>
+<li>Ein HTML-Dokument hat <code>html</code> als Wurzelelement und 2 Kindelemente <code>head</code> und <code>body</code></li>
+<li>Im <code>head</code> befinden sich sog. Metadaten zum Dokument (zumindest der Titel, angegeben durch das <code>title</code> Element)</li>
+<li>Im <code>body</code> befinden sich alle Inhalte, welche im Web-Browser dargestellt werden</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Meine Seite<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="c">&lt;!-- HTML Elemente --&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<h2 id="flow-layout">Flow Layout</h2>
+<p>Das Default-Layout in HTML ist das sog. "Flow Layout", welches auch als "Normales Layout" bezeichnet wird. In HTML sind generell 2 Arten von Elementen definiert. Das sind einerseits <code>Inline-Elemente</code> und andererseits <code>Block-Elemente</code>:</p>
+<ul>
+<li><code>Block-Elemente</code>: HTML-Elemente werden von oben nach unten aufeinander gestapelt. <code>div</code> ist das generische Block-Element.</li>
+<li><code>Inline-Elemente</code>: HTML-Elemente werden entlang des Textflusses nebeneinander gesetzt. <code>span</code> ist das generische Inline-Element.</li>
+</ul>
+<p><img alt="Inline/Block Richtung" src="../../images/012-inline-block-direction.png" title="Inline/Block Richtung" /></p>
+<p>Die HTML-Elemente werden zur Darstellung vom Web-Browser in der Reihenfolge angezeigt wie sie im HTML-Dokument angegeben wurden. Zu beachten ist dabei die Textrichtung, welche unter anderem von der Sprache des HTML-Dokumentes festgelegt wird. </p>
+<blockquote>
+<p>Die Textrichtung kann von Links nach Rechts (<code>ltr</code>) oder von Rechts nach Links (<code>rtl</code>) angegeben sein. Mit dem HTML-Attribut <code>dir</code> kann global auf dem <code>html-Tag</code> die Textrichtung geändert werden (Default ist <code>ltr</code>). Für Sprache wie zB Arabisch oder Hebräisch wird <code>rtl</code> genutzt.</p>
+</blockquote>
+<p>Beispiele für Block-Elemente sind: <code>h1-h6</code>, <code>p</code>, <code>table</code>, <code>ul</code> und <code>div</code>. Beispiele für Inline-Elemente sind: <code>strong</code>, <code>em</code>, <code>img</code>, <code>a</code>, <code>input</code> und <code>span</code>.</p>
+<h2 id="wichtige-html-elemente">Wichtige HTML-Elemente</h2>
+<h3 id="uberschriften">Überschriften</h3>
+<p>Überschriften werden über die Tags <code>h1-h6</code> angegeben. Die Zahlen 1-6 spezifizieren dabei die Hierarchieebene. Überschriften sind Block-Elemente.</p>
+<p>Beispiel für Überschriften:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Überschrift Ebene 1<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Überschrift Ebene 2<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Überschrift Ebene 3<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Überschrift Ebene 4<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h5</span><span class="p">&gt;</span>Überschrift Ebene 5<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span>Überschrift Ebene 6<span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<h3 id="textauszeichnung">Textauszeichnung</h3>
+<p>Um Textstellen gesondert hervorzuheben können die Tags <code>strong</code> oder <code>em</code> verwendet werden.</p>
+<p>Beispiel für Hervorhebungen:</p>
+<div class="codehilite"><pre><span></span>Das ist ein <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>wichtiger<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> Textabschnitt und dies ist ein <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>hervorgehobener<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span> Textabschnitt.
+</pre></div>
+
+
+<h3 id="paragraphen">Paragraphen</h3>
+<p>Zusammenhängende Textabschnitte werden als Paragraphen über das <code>p-Tag</code> angegeben. Paragraphen sind Block-Elemente.</p>
+<p>Beispiel für 2 Paragraphen:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ein erster Paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ein zweiter Paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<h3 id="geordnete-oder-ungeordnete-listen">Geordnete oder ungeordnete Listen</h3>
+<p>Listen können über die Tags <code>ul</code> (ungeordnet) oder <code>ol</code> (geordnet) angegeben werden. Mit <code>li-Tags</code> werden Listeneinträge angegeben. Listeneinträge müssen dabei immer als Kindelemente von <code>li</code> oder <code>ol</code> angegeben werden.</p>
+<p>Beispiel für eine ungeordnete Liste:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Eintrag 1<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Eintrag 2<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Eintrag 3<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>Beispiel für eine geordnete Liste:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Eintrag 1<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Eintrag 2<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Eintrag 3<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<h3 id="hyperlinks">Hyperlinks</h3>
+<p>Hyperlinks spielen eine besondere Rolle in HTML da sie die Grundlage für den sog. Hypertext darstellen. Sie liefern die Möglichkeit um unterschiedliche Webseiten miteinander zu verknüpfen. Hyperlinks werden über das <code>a-Tag</code> relisiert (a gilt dabei als Abkürzung für Anchor). Wichtige Attribute von Hyperlinks sind <code>href</code> und <code>target</code>:
+ - Über <code>href</code> wird eine URL angegeben, welche das Ziel des Hyperlinks definiert.
+ - Über <code>target</code> gibt an wie das Hyperlink im Web-Browser geöffnet werden soll. Zum Beispiel wird mit der Angabe <code>_blank</code> ein neues Browserfenster oder ein neuer Tab (je nach Interpretation des Web-Browsers) geöffnet.</p>
+<p>Beispiel für ein Hyperlink:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.fh-kufstein.ac.at&quot;</span><span class="p">&gt;</span>Link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<h3 id="bilder">Bilder</h3>
+<p>Um Bilder in einer Webseite einzufügen wird das <code>img-Tag</code> genutzt. Das Tag stellt das Attribut <code>src</code> bereit um eine URL auf ein Bild anzugeben. Mit dem Attribut <code>alt</code> wird die Möglichkeit bereitgestellt eine textliche Beschreibung des Bildinhalts zu geben. Dies kann zum Beispiel für Suchmaschinenoptimierung oder aber auch aus Gründen der Accessibility genutzt werden.</p>
+<p>Beispiel für ein Bild:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/dinosaur.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Kopf und Toros eines Dinosaurierskelet&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<h3 id="tabellen">Tabellen</h3>
+<p>Zur Darstellung von tabellarischen Daten werden Tabellen benutzt. Tabellen sollen in keinem Fall dazu verwendet werden um Layouts zu erzeugen.</p>
+<p>Über das <code>table-Tag</code> kann eine Tabelle definiert werden. Zeilen in einer Tabelle werden über das <code>tr-Tag</code> erzeugt. Innerhalb der Zeilen können Zellen definiert werden mit <code>td-Tags</code> (td für Tabledata). Für die Kopfzeile können Zellen mittels <code>th-Tags</code> definiert werden.</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Band<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Album<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Veröffentlichungsjahr<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>U2<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Boy<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1980<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Radiohead<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>OK Computer<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1997<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>The Mars Volta<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>De-Loused in the Comatorium<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>2003<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>  
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>In manchen Fällen ist es nötig Zellen in einer Tabelle über mehrere Spalten oder Zeilen zu verteilen. Mit den Attributen <code>colspan</code> bzw. <code>rowspan</code> kann für eine Zelle definiert werden über wieviele Spalten bzw. Zeilen diese verteilt werden soll.</p>
+<h3 id="formulare">Formulare</h3>
+<p>Formulare werden genutzt um Benutzereingaben zu ermöglichen. Die eingegebenen Daten können direkt an einen Web-Server gesendet werden oder auch lokal verarbeitet werden.</p>
+<p>Jedes Formular wird über ein <code>form-Tag</code> umgeben. Innerhalb eines Formular befinden sich Formularfelder. Gängige Formularfelder sind ein- oder mehrzeilige Textfelder, Auswahlfelder, Radio-Buttons oder Datumsfelder.</p>
+<p>Einzelne Formularfelder können über das Tag <code>fieldset</code> gruppiert werden. Ein Fieldset kann über das <code>legend-Tag</code> eine entsprechende Beschriftung bekommen. Beschriftungen für einzelne Formularfelder können ebenfalls mit dem Tag <code>label</code> durchgeführt werden. Das <code>label-Tag</code> stellt das Attribut <code>for</code> bereit mit dem das Attribut <code>id</code> eines entsprechenden Formularfeldes referenziert wird.</p>
+<p>Beispiel eines HTML-Formulars mit Text, Datums und Radio-Button Eingaben:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;input-name&quot;</span><span class="p">&gt;</span>Name<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Name&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;input-name&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;input-birthday&quot;</span><span class="p">&gt;</span>Geburtstag<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;date&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Geburtstag&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;input-birthday&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;birthday&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Priorität<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;input-priority-1&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;input-priority-1&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;priority&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;1&quot;</span><span class="p">&gt;</span> Hoch
+      <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;input-priority-2&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;input-priority-2&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;priority&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="p">&gt;</span> Mittel
+      <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;input-priority-3&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;input-priority-3&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;priority&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="p">&gt;</span> Niedrig
+      <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<h2 id="strukturierung-eines-html-dokuments">Strukturierung eines HTML-Dokuments</h2>
+<p>Im Beispiel wird ein typischer Aufbau einer Webseite skizziert. HTML stellt Elemente bereit, welche eine spezifische Bedeutung für den Inhalt implizieren. Diese Elemente sollen zur Strukturierung verwendet werden, sodass das HTML-Markup Bedeutung erhält. Für Web-Crawler oder Assistenztechnologien (zB Braille-Browser, Screenreader) kann die Webseite somit besser interpretiert werden.</p>
+<p><img alt="Beispiel Webseiten Struktur" src="../../images/006-Beispiel-Webseiten-Struktur.png" title="Beispiel Webseiten Struktur" /></p>
+<p>Folgend sollen die wichtigsten Struktur-Elemente kurz beschrieben werden:</p>
+<ul>
+<li><code>&lt;main&gt;</code>: Dieses Tag sollte nur einmal pro Webseite verwendet werden und soll als Wrapper für den Hauptinhalt der Webseite fungieren.</li>
+<li><code>&lt;article&gt;</code>: Schließt einen zusammenhängenden Inhalt ein, welcher für sich stehen kann.</li>
+<li><code>&lt;section&gt;</code>: Gruppierungselement um einen zusammenhängenden Teil einer Webseite zu gruppieren.</li>
+<li><code>&lt;aside&gt;</code>: Nicht direkt mit dem <code>&lt;main&gt;</code> Inhalt verknüpfte Inhalte.</li>
+<li><code>&lt;nav&gt;</code>: Enthält die Hauptnavigation der Website.</li>
+<li><code>&lt;header&gt;</code>: Stellt einleitenden Inhalt dar. </li>
+<li><code>&lt;footer&gt;</code>: Stellt abschließenden Inhalt dar.</li>
+</ul>
+<h2 id="validitat-von-html">Validität von HTML</h2>
+<p>Um eine korrekte Interpretation des HTML-Dokumentes zu gewährleisten, muss sichergestellt werden, dass keinerlei syntaktische Fehler im HTML-Markup vorherrschen. HTML-Validatoren können genutzt werden um ein HTML-Dokument automatisiert auf syntaktische Fehler zu prüfen.</p>
+<p>Das W3C stellt einen standardkonformen HTML-Validator zur Verfügung (<a href="https://validator.w3.org">https://validator.w3.org</a>). Dieser Validator unterscheidet zwischen Fehlern (Error) und Warnungen (Warning):
+ - Fehler sollten immer behoben werden, da dies ein konkretes syntaktisches Problem bezeichnet.
+ - Warnung können behoben werden, diese sind vorranging für Barrierefreiheit und Suchmaschinen vorteilhaft.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../01_Einführung/" title="Einführung" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Zurück
+                </span>
+                Einführung
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../03_CSS/" title="CSS" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Weiter
+                </span>
+                CSS
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            CC-BY-SA / Stefan Huber
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.de.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

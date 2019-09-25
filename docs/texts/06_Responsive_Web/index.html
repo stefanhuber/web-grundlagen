@@ -1,0 +1,814 @@
+
+
+
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Skriptum zur Lehrveranstaltung Web-Grundlagen">
+      
+      
+      
+        <meta name="author" content="Stefan Huber">
+      
+      
+        <meta name="lang:clipboard.copy" content="In Zwischenablage kopieren">
+      
+        <meta name="lang:clipboard.copied" content="In Zwischenablage kopiert">
+      
+        <meta name="lang:search.language" content="de">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Keine Suchergebnisse">
+      
+        <meta name="lang:search.result.one" content="1 Suchergebnis">
+      
+        <meta name="lang:search.result.other" content="# Suchergebnisse">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>Responsive Web - Web-Grundlagen</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#responsive-web" tabindex="1" class="md-skip">
+        Zum Inhalt
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Web-Grundlagen" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Web-Grundlagen
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Responsive Web
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Suchbegriff eingeben
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/stefanhuber/web-grundlagen/" title="Quellcode" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Web-Grundlagen" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Web-Grundlagen
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/stefanhuber/web-grundlagen/" title="Quellcode" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Web-Grundlagen
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Web-Grundlagen
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../01_Einführung/" title="Einführung" class="md-nav__link">
+      Einführung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02_HTML/" title="HTML" class="md-nav__link">
+      HTML
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03_CSS/" title="CSS" class="md-nav__link">
+      CSS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04_Grafik/" title="Grafik im WWW" class="md-nav__link">
+      Grafik im WWW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05_CSS_Layouts/" title="Layouts und Positionierung" class="md-nav__link">
+      Layouts und Positionierung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Responsive Web
+      </label>
+    
+    <a href="./" title="Responsive Web" class="md-nav__link md-nav__link--active">
+      Responsive Web
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#viewport" class="md-nav__link">
+    Viewport
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mediatypes" class="md-nav__link">
+    Mediatypes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mediaqueries" class="md-nav__link">
+    Mediaqueries
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mediaquery-media-features" class="md-nav__link">
+    Mediaquery: Media Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediaquery-logische-verknupfungen" class="md-nav__link">
+    Mediaquery: Logische Verknüpfungen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediaquery-beispiele" class="md-nav__link">
+    Mediaquery Beispiele
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07_Praktische_Aspekte/" title="Praktische Aspekte" class="md-nav__link">
+      Praktische Aspekte
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Übungen
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Übungen
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../exercises/01/" title="Übung 1" class="md-nav__link">
+      Übung 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../exercises/02/" title="Übung 2" class="md-nav__link">
+      Übung 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#viewport" class="md-nav__link">
+    Viewport
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mediatypes" class="md-nav__link">
+    Mediatypes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mediaqueries" class="md-nav__link">
+    Mediaqueries
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mediaquery-media-features" class="md-nav__link">
+    Mediaquery: Media Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediaquery-logische-verknupfungen" class="md-nav__link">
+    Mediaquery: Logische Verknüpfungen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediaquery-beispiele" class="md-nav__link">
+    Mediaquery Beispiele
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/stefanhuber/web-grundlagen/edit/master/docs/texts/06_Responsive_Web.md" title="Seite editieren" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="responsive-web">Responsive Web</h1>
+<p>Das WWW kann grundsätzlich über unterschiedliche Geräte betrachtet und bedient werden. Nahezu für jedes Gerät gibt es einen Web-Browser. Responsive Web Design (RWD) ist ein Ansatz um Webseiten so zu gestalten, dass sich ihr Layout bzw. die allgemeine Gestaltung und Bedienung auf die verfügbaren Möglichkeiten (zB Bildschirmgröße) des entsprechenden Gerätes anpasst.</p>
+<h2 id="viewport">Viewport</h2>
+<p>Mit den ersten Smartphones (unter anderem iPhone 1) wurde ersichtlich, dass die Erstellung von Webseiten mit fixen Breiten ein Problem darstellt. Am Smartphone konnte nur ein kleiner Ausschnitt einer Webseite angezeigt werden.</p>
+<p>Als Lösung wurde ein sog. Viewport definiert. Ein Viewport stellt eine "virtuelle" Zeichenfläche dar, welche eine dedizierte Breite und Höhe aufweist (von Web-Browsern unterschiedliche festgelegt zB mit Breite 980px). Die Webseite wird auf die virtuelle Zeichenfläche geladen und diese Zeichenfläche wird dann angepasst und auf das tatsächliche Display projiziert.</p>
+<p>Im folgenden Bild wird gezeigt wie sich das Problem der "fixen Breite" einer Webseite darstellt:</p>
+<p><img alt="Viewport 1" src="../../images/007-viewport-01.jpg" title="Viewport 1" /></p>
+<p>Im folgenden Bild wird gezeigt wie das Problem der "fixen Breite" einer Webseite durch die Einführung des Viewport gelöst wurde:</p>
+<p><img alt="Viewport 2" src="../../images/008-viewport-02.jpg" title="Viewport 2" /></p>
+<p>Die beschriebene Viewport-Projektion ist bei Smartphone und Tablet Browsern aktiviert. Bei speziell angepassten mobilen Webseiten fürht dies jedoch zum Problem, dass die Default-Viewport-Größe zu groß ist und der rechte Bereit weiß bleibt. Deshalb kann mit dem speziellen <code>viewport-Metatag</code> eine Anpassung der Viewport-Größe durchgeführt werden.</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="p">&gt;</span> 
+</pre></div>
+
+
+<p>Für das <code>viewport-Metatag</code> können unter anderem folgende Parameter spezifiziert werden: <code>width</code>, <code>initial-scale</code>, <code>minimum-scale</code> oder <code>maximum-scale</code>.</p>
+<p>Im folgenden Bild wird gezeigt wie sich die Anpassung der Viewport Größe auf die Darstellung am Smartphone auswirkt:</p>
+<p><img alt="Viewport 3" src="../../images/009-viewport-03.jpg" title="Viewport 3" /></p>
+<p>Beispiele von Pixel bzw. Viewport Größen populärer Geräte:</p>
+<table>
+<thead>
+<tr>
+<th>Bezeichnung</th>
+<th>Pixel</th>
+<th>Viewport</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iPhone XR</td>
+<td>828x1792</td>
+<td>414x896</td>
+</tr>
+<tr>
+<td>iPhone 8</td>
+<td>750x1334</td>
+<td>375x667</td>
+</tr>
+<tr>
+<td>iPhone 7</td>
+<td>750x1334</td>
+<td>375x667</td>
+</tr>
+<tr>
+<td>iPad Air 1 &amp; 2</td>
+<td>1536x2048</td>
+<td>768x1024</td>
+</tr>
+<tr>
+<td>Google Pixel 3</td>
+<td>1080x2160</td>
+<td>412x824</td>
+</tr>
+<tr>
+<td>Samsung Galaxy S9</td>
+<td>1440x2960</td>
+<td>360x740</td>
+</tr>
+<tr>
+<td>Nexus 9</td>
+<td>1536x2048</td>
+<td>768x1024</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mediatypes">Mediatypes</h2>
+<p>Mit Mediatypes werden unterschiedliche Ausgabegeräte definiert. Durch Angabe eines Mediatypes bei der Definition eines Stylesheets können diese medienspezifisch geladen werden.</p>
+<p>Die Mediatypes <code>all</code>, <code>print</code>, <code>screen</code> und <code>speech</code> sind definiert. Der Mediatype <code>all</code> ist dabei als Defaultwert zu verstehen. Im folgenden Beispiel wird gezeigt wie ein Stylesheet eingebunden werden kann, welcher nur für Mediatype <code>print</code> geladen werden soll:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;beispiel.css&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;print&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<h2 id="mediaqueries">Mediaqueries</h2>
+<p>Innerhalb von CSS-Stylescheets können Mediaqueries eingefügt werden. Mit Mediaqueries können Bedingungen definiert weden um CSS-Regeln konditional zu laden.</p>
+<p>Folgend sind die wesentlichen Bestandteile eine Mediaquery:</p>
+<ul>
+<li>Eine Mediaquery wird syntaktisch mit dem <code>@media</code> Schlüsselwort eingeleitet.</li>
+<li>Als Bedingung können Mediatypes genutzt werden.</li>
+<li>Als Bedingung können Mediafeatures genutzt werden.</li>
+<li>Mediatype bzw. Mediafeatures können über logische Verknüpfungen kombiniert werden.</li>
+</ul>
+<p>Beispiel einer Mediaquery:</p>
+<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">420px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="p">.</span><span class="nc">example-class</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+    <span class="c">/* ... */</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="mediaquery-media-features">Mediaquery: Media Features</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>width</code>, <code>min-width</code>, <code>max-width</code></td>
+<td>Breite des Viewports</td>
+</tr>
+<tr>
+<td><code>height</code>, <code>min-height</code>, <code>max-height</code></td>
+<td>Höhe des Viewport</td>
+</tr>
+<tr>
+<td><code>aspect-ratio</code></td>
+<td>Verhältnis von Höhe zu Breite des Viewport</td>
+</tr>
+<tr>
+<td><code>orientation</code></td>
+<td>Portrait oder Landscape Orientierung des Viewport</td>
+</tr>
+<tr>
+<td><code>hover</code></td>
+<td>Unterstützt das Eingabegerät den hover-Effekt (zB Desktop: ja / Smartphone u. Tablet: nein)</td>
+</tr>
+</tbody>
+</table>
+<p>Neben den Features, welche in der Tabelle beschrieben wurden und gängig sind, gibt es noch viele weitere sehr spezielle Features. Beispiele für weitere Features: <code>resolution</code>, <code>scan</code>, <code>grid</code>, <code>update</code>, <code>color</code>, <code>monochrome</code></p>
+<h3 id="mediaquery-logische-verknupfungen">Mediaquery: Logische Verknüpfungen</h3>
+<table>
+<thead>
+<tr>
+<th>Verknüpfung</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>and</code></td>
+<td>Und-Verknüpfung: Es müssen alle Bedingungen der Mediaquery WAHR sein damit die CSS-Regeln geladen werden.</td>
+</tr>
+<tr>
+<td><code>,</code></td>
+<td>Oder-Verknüpfung: Es muss zumindest eine Bedingung der Mediaquery WAHR sein damit die CSS-Regeln geladen werden.</td>
+</tr>
+<tr>
+<td><code>not</code></td>
+<td>Negation: Alles außer die angegebene Bindung muss WAHR sein damit die CSS-Regeln geladen werden.</td>
+</tr>
+<tr>
+<td><code>only</code></td>
+<td>Auf alten Browsern (welche Mediaqueries nicht umfänglich unterstützen) kann mit <code>only</code> veranlasst werden, dass dieser die Mediaquery ignoriert (zB IE6 – IE8)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mediaquery-beispiele">Mediaquery Beispiele</h3>
+<p>Die folgende Mediaquery wird für den Mediatype Bildschirm und eine Viewport Größe zwischen 768px und 991px aktiviert:</p>
+<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="p">:</span><span class="nd">768px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="p">:</span><span class="nd">991px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="c">/* */</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Die folgende Mediaquery wird für den Mediatype Bildschirm und Druck aktiviert:</p>
+<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">media</span> <span class="nt">screen</span><span class="o">,</span> <span class="nt">print</span> <span class="p">{</span>
+    <span class="c">/* */</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Die folgende Mediaquery wird für Geräte aktiviert, welche den Hover-Effekt unterstützen (Vorraussetzung einer Maus-basierten Navigation)</p>
+<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">hover</span><span class="o">:</span> <span class="nt">hover</span><span class="o">)</span> <span class="p">{</span>
+    <span class="c">/* */</span>
+<span class="p">}</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../05_CSS_Layouts/" title="Layouts und Positionierung" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Zurück
+                </span>
+                Layouts und Positionierung
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../07_Praktische_Aspekte/" title="Praktische Aspekte" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Weiter
+                </span>
+                Praktische Aspekte
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            CC-BY-SA / Stefan Huber
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.de.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

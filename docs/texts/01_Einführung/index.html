@@ -1,0 +1,732 @@
+
+
+
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Skriptum zur Lehrveranstaltung Web-Grundlagen">
+      
+      
+      
+        <meta name="author" content="Stefan Huber">
+      
+      
+        <meta name="lang:clipboard.copy" content="In Zwischenablage kopieren">
+      
+        <meta name="lang:clipboard.copied" content="In Zwischenablage kopiert">
+      
+        <meta name="lang:search.language" content="de">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Keine Suchergebnisse">
+      
+        <meta name="lang:search.result.one" content="1 Suchergebnis">
+      
+        <meta name="lang:search.result.other" content="# Suchergebnisse">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>Einführung - Web-Grundlagen</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#world-wide-web-www" tabindex="1" class="md-skip">
+        Zum Inhalt
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Web-Grundlagen" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Web-Grundlagen
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Einführung
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Suchbegriff eingeben
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/stefanhuber/web-grundlagen/" title="Quellcode" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Web-Grundlagen" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Web-Grundlagen
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/stefanhuber/web-grundlagen/" title="Quellcode" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Web-Grundlagen
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Web-Grundlagen
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Einführung
+      </label>
+    
+    <a href="./" title="Einführung" class="md-nav__link md-nav__link--active">
+      Einführung
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technische-grundlagen" class="md-nav__link">
+    Technische Grundlagen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uniform-resource-locator-url" class="md-nav__link">
+    Uniform Resource Locator (URL)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-name-system-dns" class="md-nav__link">
+    Domain Name System (DNS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-protokoll" class="md-nav__link">
+    HTTP-Protokoll
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-browser" class="md-nav__link">
+    Web-Browser
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w3c-und-standardisierung" class="md-nav__link">
+    W3C und Standardisierung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clientseitige-web-technologien" class="md-nav__link">
+    Clientseitige Web-Technologien
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02_HTML/" title="HTML" class="md-nav__link">
+      HTML
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03_CSS/" title="CSS" class="md-nav__link">
+      CSS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04_Grafik/" title="Grafik im WWW" class="md-nav__link">
+      Grafik im WWW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05_CSS_Layouts/" title="Layouts und Positionierung" class="md-nav__link">
+      Layouts und Positionierung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06_Responsive_Web/" title="Responsive Web" class="md-nav__link">
+      Responsive Web
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07_Praktische_Aspekte/" title="Praktische Aspekte" class="md-nav__link">
+      Praktische Aspekte
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Übungen
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Übungen
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../exercises/01/" title="Übung 1" class="md-nav__link">
+      Übung 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../exercises/02/" title="Übung 2" class="md-nav__link">
+      Übung 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technische-grundlagen" class="md-nav__link">
+    Technische Grundlagen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uniform-resource-locator-url" class="md-nav__link">
+    Uniform Resource Locator (URL)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-name-system-dns" class="md-nav__link">
+    Domain Name System (DNS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-protokoll" class="md-nav__link">
+    HTTP-Protokoll
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-browser" class="md-nav__link">
+    Web-Browser
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w3c-und-standardisierung" class="md-nav__link">
+    W3C und Standardisierung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clientseitige-web-technologien" class="md-nav__link">
+    Clientseitige Web-Technologien
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/stefanhuber/web-grundlagen/edit/master/docs/texts/01_Einführung.md" title="Seite editieren" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="world-wide-web-www">World Wide Web (WWW)</h1>
+<p>Das WWW ist ein globales und verteiltes Informationssystem bestehend aus <em>Webseiten</em> und anderen <em>Web-Ressourcen</em> (zB Bilder, Videos, ...). Web-Ressourcen werden auf Web-Servern bereitgestellt und sind öffentlich abrufbar. Web-Ressourcen sind über einen Uniform Resource Locator (URL) eindeutig identifiziert und abrufbar. Webseiten sind im WWW über <em>Hyperlinks</em> miteinander verknüpft, welche wiederum als URL ausgedrückt werden. Webseiten können über <em>Web-Browser</em> (auch Web-Clients genannt) geladen und bedient werden.</p>
+<p><img alt="World Wide Web" src="../../images/003-www.svg" title="World Wide Web" /></p>
+<h2 id="technische-grundlagen">Technische Grundlagen</h2>
+<p>Das technische Fundament für das WWW bildet das Internet. Das Internet ist ein globales Netzwerk (Internet = interconnected network), welches Computer und andere Computer Netzwerke (Intranets) miteinander verknüpft. Umgangsprachlich wird das WWW mit dem Internet oft gleichgesetzt. Aus einer technischen Perspektive ist dies jedoch nicht der Fall.</p>
+<h3 id="uniform-resource-locator-url">Uniform Resource Locator (URL)</h3>
+<p>Eine URL ist eine global eindeutige "Adresse" einer Web-Ressource. Zusätzlich zur Identifikation gibt eine URL Aufschluss über den Speicherort einer Web-Ressource. Ein Web-Browser kann über eine URL Web-Ressourcen abrufen und anzeigen. URLs folgen einem definierten syntaktischen Aufbau:</p>
+<ul>
+<li>Schema (Scheme): Das Schema gibt den Typ der URL an. Bekannte Schemata sind zB <code>http</code>, <code>https</code>, <code>ftp</code> oder <code>mailto</code>. Die Schemaangabe wird mit einem <code>:</code> abgeschlossen.</li>
+<li>Zuständigkeit (Authority): Wesentlicher Bestandteil der Authority ist der <code>Host</code>, welcher als Domain-Name oder IP-Adresse angegeben werden kann. Optional kann die Authority eine Benutzerinformation (Benutzer<code>:</code>Passwort) enthalten, welche vor der Host-Angabe steht (Abgeschlossen durch ein <code>@</code>). Optional kann auch eine Port-Angabe angebracht werden (Eingeleitet durch einen <code>:</code>).</li>
+<li>Pfad (Path): Der Pfad ist eine hierarchische Angabe einer konkreten Ressource innerhalb einer Authority. Alle Pfadbestandteile werden ähnlich zu einem Dateisystem mittels <code>/</code> getrennt.</li>
+<li>Abfrage (Query): Der Abfrage-Teil (Query-String) wird genutzt um optionale Schlüssel-Wert Paare anzugeben. Ein Query-String wird über ein <code>?</code> eingeleitet. Schlüssel-Wert Paare werden jeweils über <code>&amp;</code> getrennt. Mit <code>=</code> wird jeweils der Schlüssel mit dem zugehörigen Wert verknüpft.</li>
+<li>Fragment: Fragmente können genutzt werden um Teile eine Ressource zu identifizieren, zB als Anker innerhalb einer Webseite. Fragmente werden über ein <code>#</code> eingeleitet.</li>
+</ul>
+<p>Beispiel einer URL:</p>
+<div class="codehilite"><pre><span></span><span class="w">        </span><span class="n">userinfo</span><span class="w">       </span><span class="k">host</span><span class="w">      </span><span class="n">port</span><span class="w"></span>
+<span class="w">        </span><span class="err">┌──┴───┐</span><span class="w"> </span><span class="err">┌──────┴──────┐</span><span class="w"> </span><span class="err">┌┴┐</span><span class="w"></span>
+<span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">john</span><span class="p">.</span><span class="n">doe</span><span class="nv">@www</span><span class="p">.</span><span class="n">example</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="mi">123</span><span class="o">/</span><span class="n">abc</span><span class="o">/</span><span class="n">def</span><span class="o">/</span><span class="vm">?</span><span class="n">name</span><span class="o">=</span><span class="n">bla</span><span class="o">&amp;</span><span class="n">q</span><span class="o">=</span><span class="n">abc#top</span><span class="w"></span>
+<span class="err">└─┬─┘</span><span class="w">   </span><span class="err">└───────────┬──────────────┘└───┬───┘</span><span class="w"> </span><span class="err">└─────┬──────┘</span><span class="w"> </span><span class="err">└┬┘</span><span class="w"></span>
+<span class="n">scheme</span><span class="w">          </span><span class="n">authority</span><span class="w">              </span><span class="k">path</span><span class="w">       </span><span class="n">query</span><span class="w">    </span><span class="n">fragment</span><span class="w"></span>
+</pre></div>
+
+
+<h3 id="domain-name-system-dns">Domain Name System (DNS)</h3>
+<p>Das Internet basiert auf dem TCP/IP Netzwerk-Stack (Internetprotokollfamilie). Im TCP/IP Netzwerk-Stack werden alle Knoten des Netzwerkes über eine IP-Adresse identifiziert. IP-Adressen sind ähnlich wie Telefonnummern für Menschen schwer einprägsam. DNS ist ein Internet-Dienst welcher, ähnlich zu einem Telefonbuch, Klarnamen zu IP-Adressen verwaltet und abrufbar macht.</p>
+<p>Beispielhafter Auszug aus der Datenbank eines DNS-Servers:</p>
+<div class="codehilite"><pre><span></span><span class="n">wikipedia</span><span class="p">.</span><span class="n">org</span>         <span class="mi">185</span><span class="p">.</span><span class="mi">102</span><span class="p">.</span><span class="mi">12</span><span class="p">.</span><span class="mi">2</span>
+<span class="n">fh</span><span class="o">-</span><span class="n">kufstein</span><span class="p">.</span><span class="n">ac</span><span class="p">.</span><span class="k">at</span>     <span class="mi">85</span><span class="p">.</span><span class="mi">234</span><span class="p">.</span><span class="mi">32</span><span class="p">.</span><span class="mi">2</span>
+<span class="p">...</span>                   <span class="p">...</span>
+</pre></div>
+
+
+<p>Typischer Ablauf einer DNS-Abfrage:</p>
+<p><img alt="DNS-Abfrage" src="../../images/001-DNS-Anfrage.svg" title="DNS-Abfrage" /></p>
+<p>Der Web-Browser nimmt in der Adresszeile einen URL entgegen, welcher unter anderem auch einen Domain-Namen enthält. Der Web-Browser macht im ersten Schritt eine Anfrage an den DNS-Server um die IP-Adresse des entsprechenden Domain-Namen zu erhalten. Erst nach Erhalt der IP-Adresse kann eine HTTP-Anfrage an den entsprechenden Web-Server gesendet werden.</p>
+<h3 id="http-protokoll">HTTP-Protokoll</h3>
+<p>Das Hypertext Transfer Protocol (HTTP) ist ein zustandsloses Netzwerkprotokoll zur Übertragung von Daten in Rechnernetzen. Es wird hauptsächlich eingesetzt, um Webseiten aus dem WWW zu laden. Es ist jedoch nicht prinzipiell darauf beschränkt und auch als allgemeines Dateiübertragungsprotokoll verbreitet.</p>
+<p>Die Kommunikation findet dabei zwischen einem Client und Server statt. Die Kommunikation folgt dem Anfrage/Antwort Schema. Der Client sendet eine Anfrage und bekommt eine Antwort vom Server.</p>
+<p><img alt="HTTP-Protokoll" src="../../images/002-HTTP-Protokoll.svg" title="HTTP-Protokoll Ablauf" /> </p>
+<h3 id="web-browser">Web-Browser</h3>
+<p>Ein Web-Browser ist eine Software-Applikation, welche genutzt wird um auf das WWW zuzugreifen. Die populärsten Web-Browser sind <code>Chrome</code>, <code>Firefox</code>, <code>Safari</code>, <code>Internet Explorer</code>, <code>Edge</code> und <code>Opera</code>.</p>
+<p><img alt="Nutzungsstatistiken Web-Browser" src="../../images/004-Browser-Statistik.png" title="Nutzungsstatistiken Web-Browser" /></p>
+<p>Web-Browser bieten folgende ähnliche Bedienelemente:</p>
+<ol>
+<li><code>Tabs</code> um mehrere Webseiten gleichzeitig zu öffnen. Der <code>Titel</code> einer Webseite bzw. das sog. <code>Favicon</code> werden ebenfalls im Tab angezeigt.</li>
+<li>Eine <code>Adressleiste</code> zur Eingabe der URL welche geladen werden soll. Für gesicherte Verbindungen (https) wird dies über ein <code>Schloss-Symbol</code> angezeigt. Die Adressleiste fungiert meist auch als <code>Eingabezeile für Suchmaschinen</code>.</li>
+<li><code>Vor- und Zurück-Buttons</code> um in der Browser-Historie zu navigieren.</li>
+<li>Ein Button zum Neuladen einer Webseite (<code>Refresh</code> oder <code>Reload</code>). Während des Ladens fungiert dieser als <code>Stop-Button</code> um das Laden abzubrechen.</li>
+<li>Ein <code>Home-Button</code> läd eine hinterlegte Home-Seite.</li>
+<li>Mittels <code>Bookmarks/Lesezeichen</code> können Links auf Webseiten katalogisiert gespeichert werden.</li>
+<li>Innerhalb einer <code>Download-Historie</code> können vergangene Downloads wiedergefunden werden.</li>
+<li>Web-Browser können über <code>Extensions</code> erweitert werden.</li>
+</ol>
+<p><img alt="Web-Browser Bedienelemente" src="../../images/005-Web-Browser-Funktionen.png" title="Web-Browser Bedienelemente" /></p>
+<h2 id="w3c-und-standardisierung">W3C und Standardisierung</h2>
+<p>Das World Wide Web Consortium (W3C) ist die primäre internationale Standardisierungsorganisation des WWW. Das W3C ist für die Standadisierung der technischen Grundlagen des WWW zuständig. Gründer und Vorsitzender des W3C ist Tim Berners-Lee. Tim Berners-Lee ist der "Erfinder" des WWW.</p>
+<p>Der W3C Standadisierungsprozess gliedert sich in Dokumente mit unterschiedlichem Reifegrad:</p>
+<ul>
+<li>Working Draft (WD): Über Arbeitsentwürfe unter Einbeziehung der Öffentlichkeit wird ein Standardisierungsdokument entwickelt</li>
+<li>Candidate Recommendation (CR): Stabiles Dokument, für welches bereits Implementierungen durchgeführt werden</li>
+<li>Proposed Recommendation (PR): Ein PR hat den CR-Status finalisiert und wird an den W3C Advisory Council weitergegeben für eine finale Zustimmung.</li>
+<li>W3C Recommendation (REC): Nach Zustimmung des W3C Advisory Council wird die PR zur W3C-Recommendation bzw. W3C Standard.</li>
+</ul>
+<blockquote>
+<p>Beispiele für W3C Recommendations sind HTML, XML, CSS, PNG, SVG, DOM.</p>
+</blockquote>
+<h2 id="clientseitige-web-technologien">Clientseitige Web-Technologien</h2>
+<p>Zur Entwicklung von Webseiten bzw. Web-Anwendungen werden standardisierte Web-Technologien genutzt:</p>
+<ul>
+<li>Hypertext Markup Language (HTML): HTML wird genutzt um Inhalte zu strukturieren</li>
+<li>Cascading Stylesheets (CSS): CSS wird genutzt um Inhalte zu formatierung bzw. zu gestalten</li>
+<li>JavaScript: Mit JavaScript wird Verhalten und Dynamik in eine Webseite integriert</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../.." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Zurück
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../02_HTML/" title="HTML" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Weiter
+                </span>
+                HTML
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            CC-BY-SA / Stefan Huber
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.de.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
