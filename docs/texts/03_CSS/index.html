@@ -323,6 +323,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#wertangaben-fur-css-eigenschaften" class="md-nav__link">
+    Wertangaben für CSS-Eigenschaften
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#absolute-wertangaben" class="md-nav__link">
+    Absolute Wertangaben
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relative-wertangaben" class="md-nav__link">
+    Relative Wertangaben
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#css-selektoren" class="md-nav__link">
     CSS-Selektoren
   </a>
@@ -565,6 +592,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#wertangaben-fur-css-eigenschaften" class="md-nav__link">
+    Wertangaben für CSS-Eigenschaften
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#absolute-wertangaben" class="md-nav__link">
+    Absolute Wertangaben
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relative-wertangaben" class="md-nav__link">
+    Relative Wertangaben
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#css-selektoren" class="md-nav__link">
     CSS-Selektoren
   </a>
@@ -705,6 +759,76 @@
 </blockquote>
 <h2 id="css-eigenschaften">CSS-Eigenschaften</h2>
 <p>Über CSS-Eigenschaften kann das Aussehen und die Positionierung bzw. das Layout von HTML-Elementen bestimmt werden. Es gibt eine Vielzahl von unterschiedlichen CSS-Eigenschaften die jeglichen Aspekt des Aussehens bzw. auch des Verhaltens von HTML-Elementen bestimmen.</p>
+<h2 id="wertangaben-fur-css-eigenschaften">Wertangaben für CSS-Eigenschaften</h2>
+<p>Viele CSS-Eigenschaften verlangen eine Wertangabe als Deklaration (zB <code>width</code>, <code>padding</code>, <code>font-size</code>). Diese Wertangaben bestehen einerseits aus einem <code>Zahlenwert</code> und andererseits aus einer <code>Einheit</code>. In CSS können Werte in <code>absoluten</code> oder <code>relativen</code> Einheiten angegeben werden. Generell muss jeder Wert mit Einheit angegeben werden, außer für <code>0</code>. Zwischen Wert und Einheit darf sich kein Leerraum befinden (zB <code>15px</code>, <code>5%</code> oder <code>55cm</code>).</p>
+<h3 id="absolute-wertangaben">Absolute Wertangaben</h3>
+<table>
+<thead>
+<tr>
+<th>Einheit</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cm</code></td>
+<td>Zentimeter</td>
+</tr>
+<tr>
+<td><code>mm</code></td>
+<td>Millimeter</td>
+</tr>
+<tr>
+<td><code>in</code></td>
+<td>Zoll (inches) <code>1in = 2.54cm</code></td>
+</tr>
+<tr>
+<td><code>px</code></td>
+<td>Ein physischer Pixel (Ausnahme: siehe <code>viewport</code>)</td>
+</tr>
+<tr>
+<td><code>pt</code></td>
+<td>Punkt (point) <code>1/72 eines Zolls</code></td>
+</tr>
+<tr>
+<td><code>pc</code></td>
+<td>picas <code>1pc = 12pt</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="relative-wertangaben">Relative Wertangaben</h3>
+<p>Relative Wertangaben orientieren sich anhand einer anderen Wertangabe (zB Viewport, font-size des aktuellen HTML-Elements). Relative Wertangaben haben den Vorteil, dass sie sich besser anpassen auf unterschiedliche Ausgabemedien.</p>
+<table>
+<thead>
+<tr>
+<th>Einheit</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>em</code></td>
+<td>Relativ zur <code>font-size</code> des HTML-Elements (<code>2em</code> würde bedeuten 2x so groß wie die aktuelle <code>font-size</code>)</td>
+</tr>
+<tr>
+<td><code>rem</code></td>
+<td>Relativ zur <code>font-size</code> des Wurzel HTML-Elements (<code>2rem</code> würde bedeuten 2x so groß wie die definierte <code>font-size</code> im <code>html</code> Element)</td>
+</tr>
+<tr>
+<td><code>vw</code></td>
+<td>Relativ zu <code>1%</code> der Viewport-Breite</td>
+</tr>
+<tr>
+<td><code>vh</code></td>
+<td>Relativ zu <code>1%</code> der Viewport-Höhe</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Definiert den Wert relativ zum Elternelement</td>
+</tr>
+</tbody>
+</table>
+<p>Es sind noch weitere Einheiten definiert, welche jedoch eher selten genutzt werden: <code>ex</code>, <code>ch</code>, <code>vmin</code>, <code>vmax</code>.</p>
 <h2 id="css-selektoren">CSS-Selektoren</h2>
 <p>Mit CSS-Selektoren können HTML-Elemente im DOM eindeutig identifiziert werden. Somit kann der Eigenschaftsblock einer CSS-Regel auf selektierte HTML-Elemente angewendet werden. CSS-Selektoren werden auch in Zusammenhang mit JavaScript verwendet um HTML-Elemente zu selektieren und dynamisch zu verändern.</p>
 <p>Es gibt unterschiedliche Formen von Selektoren:

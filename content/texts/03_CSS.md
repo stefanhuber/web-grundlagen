@@ -38,6 +38,35 @@ a.my-class, #id123 {
 
 Über CSS-Eigenschaften kann das Aussehen und die Positionierung bzw. das Layout von HTML-Elementen bestimmt werden. Es gibt eine Vielzahl von unterschiedlichen CSS-Eigenschaften die jeglichen Aspekt des Aussehens bzw. auch des Verhaltens von HTML-Elementen bestimmen.
 
+## Wertangaben für CSS-Eigenschaften
+
+Viele CSS-Eigenschaften verlangen eine Wertangabe als Deklaration (zB `width`, `padding`, `font-size`). Diese Wertangaben bestehen einerseits aus einem `Zahlenwert` und andererseits aus einer `Einheit`. In CSS können Werte in `absoluten` oder `relativen` Einheiten angegeben werden. Generell muss jeder Wert mit Einheit angegeben werden, außer für `0`. Zwischen Wert und Einheit darf sich kein Leerraum befinden (zB `15px`, `5%` oder `55cm`).
+
+### Absolute Wertangaben
+
+| Einheit | Beschreibung |
+| --- | --- |
+| `cm` | Zentimeter |
+| `mm` | Millimeter |
+| `in` | Zoll (inches) `1in = 2.54cm` |
+| `px` | Ein physischer Pixel (Ausnahme: siehe `viewport`) |
+| `pt` | Punkt (point) `1/72 eines Zolls` |
+| `pc` | picas `1pc = 12pt` |
+
+### Relative Wertangaben
+
+Relative Wertangaben orientieren sich anhand einer anderen Wertangabe (zB Viewport, font-size des aktuellen HTML-Elements). Relative Wertangaben haben den Vorteil, dass sie sich besser anpassen auf unterschiedliche Ausgabemedien.
+
+| Einheit | Beschreibung |
+| --- | --- |
+| `em` | Relativ zur `font-size` des HTML-Elements (`2em` würde bedeuten 2x so groß wie die aktuelle `font-size`) |
+| `rem` | Relativ zur `font-size` des Wurzel HTML-Elements (`2rem` würde bedeuten 2x so groß wie die definierte `font-size` im `html` Element) |
+| `vw` | Relativ zu `1%` der Viewport-Breite |
+| `vh` | Relativ zu `1%` der Viewport-Höhe |
+| `%` | Definiert den Wert relativ zum Elternelement |
+
+Es sind noch weitere Einheiten definiert, welche jedoch eher selten genutzt werden: `ex`, `ch`, `vmin`, `vmax`.
+
 ## CSS-Selektoren
 
 Mit CSS-Selektoren können HTML-Elemente im DOM eindeutig identifiziert werden. Somit kann der Eigenschaftsblock einer CSS-Regel auf selektierte HTML-Elemente angewendet werden. CSS-Selektoren werden auch in Zusammenhang mit JavaScript verwendet um HTML-Elemente zu selektieren und dynamisch zu verändern.

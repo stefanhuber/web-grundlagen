@@ -8,7 +8,7 @@
  - [04 Grafik im WWW](texts/04_Grafik)
  - [05 CSS Layouts](texts/05_CSS_Layouts)
  - [06 Responsive Web](texts/06_Responsive_Web)
- - [07 Praktische Aspekte](texts/07_Praktische_Aspekte)
+ - [07 Praktische Aspekte und Links](texts/07_Praktische_Aspekte)
 
 ## Übungen
 

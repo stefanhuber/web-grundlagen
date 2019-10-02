@@ -1,6 +1,6 @@
 # Layouts und Positionierung
 
-Das Default-Layout in HTML ist das sog. "Flow-Layout". Dabei werden HTML-Elemente anhand ihrer `display-Eigenschaft` als `block` oder `inline` ausgerichtet. Moderne Webseiten haben komplexe Layouts, welche über das Flow Layout alleine nicht realisierbar wären. 
+Das Default-Layout in HTML ist das sog. "Flow-Layout". Dabei werden HTML-Elemente anhand ihrer `display-Eigenschaft` als `block` oder `inline` ausgerichtet. Moderne Webseiten haben komplexe Layouts, welche über das Flow Layout alleine nicht realisierbar wären. Eine Option die CSS bereitstellt ist die Positionierung von HTML-Elementen. Weitere Optionen sind die Layout-Systeme `flexbox` und `grid`. 
 
 ## Positionierung
 
@@ -131,8 +131,6 @@ Im Beispiel wird ersichtlich, dass der vom Flow-Layout vorgegebene Platz für da
 ### Beispiel für z-index Änderungen
 
 HTML-Elemente des normalen Flussen haben den `z-index` mit `0` gesetzt. Beim relativ Positionierten HTML-Element kann der `z-index` verändert werden.
-
-## Flexbox-Layout
 
 ## Grid-Layout
 
