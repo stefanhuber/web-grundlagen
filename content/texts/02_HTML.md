@@ -1,6 +1,6 @@
 # HTML
 
-Die Hypertext Markup Language (HTML) ist eine textbasierte Auszeichnungssprache zur Strukturierung von Webseiten (in diesem Zusammenhant als HTML-Dokumente bezeichnet). HTML basiert auf sog. Tags, welche als Text Bausteine mit den Zeichen `<` bzw. `>` definiert werden. HTML dient dabei nur der Strukturierung der Inhalte und legt keinerlei Formatierung fest.
+Die Hypertext Markup Language (HTML) ist eine textbasierte Auszeichnungssprache zur Strukturierung von Webseiten (in diesem Zusammenhang als HTML-Dokumente bezeichnet). HTML basiert auf sog. Tags, welche als Text Bausteine mit den Zeichen `<` bzw. `>` definiert werden. HTML dient dabei nur der Strukturierung der Inhalte und legt keinerlei Formatierung fest.
 
 ## HTML-Markup Regeln
 
@@ -30,7 +30,7 @@ Beispiel für ein HTML-Element mit Attribut:
       Attribut   Attributwert      
 ```
 
-Es gibt Außnahmen, welche nicht den oben beschriebenene allgemeinen Regelungen folgen:
+Es gibt Ausnahmen, welche nicht den oben beschriebenen allgemeinen Regelungen folgen:
  - Leere HTML-Elemente: Es gibt HTML-Elemente, welche keinen expiziten textlichen Inhalt besitzen. Beispiele dafür sind: 
    - `<br>`: Zeilenumbruch
    - `<hr>`: Horizontale Trennline
@@ -66,7 +66,7 @@ Beispiele für HTML-Entities:
 
 ### Whitespace
 
-Als Whitespace werden jegliche Leerräume, Tabulatoren und Zeilenumbrüche bezeichnet. Für die Darstellung von HTML hat Whitespace keine bedeutung. Der Web-Browser ignoriert Whitespace generell und reduziert Whitespace zwischen 2 Wörtern auf genau einen Leerraum.
+Als Whitespace werden jegliche Leerräume, Tabulatoren und Zeilenumbrüche bezeichnet. Für die Darstellung von HTML hat Whitespace keine Bedeutung. Der Web-Browser ignoriert Whitespace generell und reduziert Whitespace zwischen 2 Wörtern auf genau einen Leerraum.
 
 Die beiden Paragraphen im folgenden Beispiel resultieren in der selben Anzeige:
 ```html
@@ -84,11 +84,12 @@ HTML-Dokumente haben einen definierten Aufbau:
  - Ein HTML-Dokument hat `html` als Wurzelelement und 2 Kindelemente `head` und `body`
  - Im `head` befinden sich sog. Metadaten zum Dokument (zumindest der Titel, angegeben durch das `title` Element)
  - Im `body` befinden sich alle Inhalte, welche im Web-Browser dargestellt werden
-
+ 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Meine Seite</title>
   </head>
   <body>
@@ -116,7 +117,7 @@ Beispiele für Block-Elemente sind: `h1-h6`, `p`, `table`, `ul` und `div`. Beisp
 
 ### Überschriften
 
-Überschriften werden über die Tags `h1-h6` angegeben. Die Zahlen 1-6 spezifizieren dabei die Hierarchieebene. Überschriften sind Block-Elemente.
+Überschriften werden über die Tags `h1-h6` angegeben. Die Zahlen 1-6 spezifizieren dabei die Hierarchieebene.
 
 Beispiel für Überschriften:
 ```html
@@ -139,7 +140,7 @@ Das ist ein <strong>wichtiger</strong> Textabschnitt und dies ist ein <em>hervor
 
 ### Paragraphen
 
-Zusammenhängende Textabschnitte werden als Paragraphen über das `p-Tag` angegeben. Paragraphen sind Block-Elemente.
+Zusammenhängende Textabschnitte werden als Paragraphen über das `p-Tag` angegeben. 
 
 Beispiel für 2 Paragraphen:
 ```html
@@ -171,9 +172,9 @@ Beispiel für eine geordnete Liste:
 
 ### Hyperlinks
 
-Hyperlinks spielen eine besondere Rolle in HTML da sie die Grundlage für den sog. Hypertext darstellen. Sie liefern die Möglichkeit um unterschiedliche Webseiten miteinander zu verknüpfen. Hyperlinks werden über das `a-Tag` relisiert (a gilt dabei als Abkürzung für Anchor). Wichtige Attribute von Hyperlinks sind `href` und `target`:
+Hyperlinks spielen eine besondere Rolle in HTML da sie die Grundlage für den sog. Hypertext darstellen. Sie liefern die Möglichkeit unterschiedliche Webseiten miteinander zu verknüpfen. Hyperlinks werden über das `a-Tag` realisiert (a gilt dabei als Abkürzung für Anchor). Wichtige Attribute von Hyperlinks sind `href` und `target`:
  - Über `href` wird eine URL angegeben, welche das Ziel des Hyperlinks definiert.
- - Über `target` gibt an wie das Hyperlink im Web-Browser geöffnet werden soll. Zum Beispiel wird mit der Angabe `_blank` ein neues Browserfenster oder ein neuer Tab (je nach Interpretation des Web-Browsers) geöffnet.
+ - Über `target` wird angegeben wie das Hyperlink im Web-Browser geöffnet werden soll. Zum Beispiel wird mit der Angabe `_blank` ein neues Browserfenster oder ein neuer Tab (je nach Interpretation des Web-Browsers) geöffnet.
 
 Beispiel für ein Hyperlink:
 ```html
@@ -192,7 +193,7 @@ Beispiel für ein Bild:
 ### Tabellen
 Zur Darstellung von tabellarischen Daten werden Tabellen benutzt. Tabellen sollen in keinem Fall dazu verwendet werden um Layouts zu erzeugen.
 
-Über das `table-Tag` kann eine Tabelle definiert werden. Zeilen in einer Tabelle werden über das `tr-Tag` erzeugt. Innerhalb der Zeilen können Zellen definiert werden mit `td-Tags` (td für Tabledata). Für die Kopfzeile können Zellen mittels `th-Tags` definiert werden.
+Über das `table-Tag` kann eine Tabelle definiert werden. Zeilen in einer Tabelle werden über das `tr-Tag` erzeugt. Innerhalb der Zeilen können Zellen definiert werden mit `td-Tags` (td für Tabledata). Für die Kopfzeile können Zellen mittels `th-Tags` (th für Tablehead) definiert werden.
 
 ```html
 <table>
@@ -272,8 +273,8 @@ Folgend sollen die wichtigsten Struktur-Elemente kurz beschrieben werden:
 
  - `<main>`: Dieses Tag sollte nur einmal pro Webseite verwendet werden und soll als Wrapper für den Hauptinhalt der Webseite fungieren.
  - `<article>`: Schließt einen zusammenhängenden Inhalt ein, welcher für sich stehen kann.
- - `<section>`: Gruppierungselement um einen zusammenhängenden Teil einer Webseite zu gruppieren.
- - `<aside>`: Nicht direkt mit dem `<main>` Inhalt verknüpfte Inhalte.
+ - `<section>`: Gruppierungselement um einen zusammenhängenden Teil einer Webseite zusammenzufassen.
+ - `<aside>`: Nicht direkt mit dem `<main>` Inhalt verknüpfte Inhalte. Zum Beispiel für wiederkehrende Inhalte auf mehreren Webseiten.
  - `<nav>`: Enthält die Hauptnavigation der Website.
  - `<header>`: Stellt einleitenden Inhalt dar. 
  - `<footer>`: Stellt abschließenden Inhalt dar.

@@ -59,7 +59,7 @@
     =<p>Refresh-Button</p> -> Webseite neuladen
 }
 
-::HTML 10::[html]Ordnen Sie den Web-Technologien deren primärer Funktion zu.<br>{
+::HTML 10::[html]Ordnen Sie den Web-Technologien deren primäre Funktion zu.<br>{
 	=<p>HTML</p> -> Struktur
 	=<p>CSS</p> -> Formatierung und Gestaltung
 	=<p>JavaScript</p> -> Verhalten

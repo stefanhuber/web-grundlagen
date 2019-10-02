@@ -729,7 +729,7 @@
                 
                 
                 <h1 id="html">HTML</h1>
-<p>Die Hypertext Markup Language (HTML) ist eine textbasierte Auszeichnungssprache zur Strukturierung von Webseiten (in diesem Zusammenhant als HTML-Dokumente bezeichnet). HTML basiert auf sog. Tags, welche als Text Bausteine mit den Zeichen <code>&lt;</code> bzw. <code>&gt;</code> definiert werden. HTML dient dabei nur der Strukturierung der Inhalte und legt keinerlei Formatierung fest.</p>
+<p>Die Hypertext Markup Language (HTML) ist eine textbasierte Auszeichnungssprache zur Strukturierung von Webseiten (in diesem Zusammenhang als HTML-Dokumente bezeichnet). HTML basiert auf sog. Tags, welche als Text Bausteine mit den Zeichen <code>&lt;</code> bzw. <code>&gt;</code> definiert werden. HTML dient dabei nur der Strukturierung der Inhalte und legt keinerlei Formatierung fest.</p>
 <h2 id="html-markup-regeln">HTML-Markup Regeln</h2>
 <p>Ein HTML-Element hat mehrere Bestandteile:
  - Öffnendes Tag: Ein öffnendes Tag besteht aus den Klammersymbolen <code>&lt;</code> und <code>&gt;</code> und dem eingeschlossenen Tag-Name (zB <code>&lt;p&gt;</code>).
@@ -756,7 +756,7 @@
 </pre></div>
 
 
-<p>Es gibt Außnahmen, welche nicht den oben beschriebenene allgemeinen Regelungen folgen:
+<p>Es gibt Ausnahmen, welche nicht den oben beschriebenen allgemeinen Regelungen folgen:
  - Leere HTML-Elemente: Es gibt HTML-Elemente, welche keinen expiziten textlichen Inhalt besitzen. Beispiele dafür sind: 
    - <code>&lt;br&gt;</code>: Zeilenumbruch
    - <code>&lt;hr&gt;</code>: Horizontale Trennline
@@ -801,7 +801,7 @@
 </tbody>
 </table>
 <h3 id="whitespace">Whitespace</h3>
-<p>Als Whitespace werden jegliche Leerräume, Tabulatoren und Zeilenumbrüche bezeichnet. Für die Darstellung von HTML hat Whitespace keine bedeutung. Der Web-Browser ignoriert Whitespace generell und reduziert Whitespace zwischen 2 Wörtern auf genau einen Leerraum.</p>
+<p>Als Whitespace werden jegliche Leerräume, Tabulatoren und Zeilenumbrüche bezeichnet. Für die Darstellung von HTML hat Whitespace keine Bedeutung. Der Web-Browser ignoriert Whitespace generell und reduziert Whitespace zwischen 2 Wörtern auf genau einen Leerraum.</p>
 <p>Die beiden Paragraphen im folgenden Beispiel resultieren in der selben Anzeige:</p>
 <div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Beispiel für Whitespace<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 
@@ -821,6 +821,7 @@
 <div class="codehilite"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Meine Seite<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
@@ -844,7 +845,7 @@
 <p>Beispiele für Block-Elemente sind: <code>h1-h6</code>, <code>p</code>, <code>table</code>, <code>ul</code> und <code>div</code>. Beispiele für Inline-Elemente sind: <code>strong</code>, <code>em</code>, <code>img</code>, <code>a</code>, <code>input</code> und <code>span</code>.</p>
 <h2 id="wichtige-html-elemente">Wichtige HTML-Elemente</h2>
 <h3 id="uberschriften">Überschriften</h3>
-<p>Überschriften werden über die Tags <code>h1-h6</code> angegeben. Die Zahlen 1-6 spezifizieren dabei die Hierarchieebene. Überschriften sind Block-Elemente.</p>
+<p>Überschriften werden über die Tags <code>h1-h6</code> angegeben. Die Zahlen 1-6 spezifizieren dabei die Hierarchieebene.</p>
 <p>Beispiel für Überschriften:</p>
 <div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Überschrift Ebene 1<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Überschrift Ebene 2<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
@@ -863,7 +864,7 @@
 
 
 <h3 id="paragraphen">Paragraphen</h3>
-<p>Zusammenhängende Textabschnitte werden als Paragraphen über das <code>p-Tag</code> angegeben. Paragraphen sind Block-Elemente.</p>
+<p>Zusammenhängende Textabschnitte werden als Paragraphen über das <code>p-Tag</code> angegeben. </p>
 <p>Beispiel für 2 Paragraphen:</p>
 <div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ein erster Paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ein zweiter Paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
@@ -891,9 +892,9 @@
 
 
 <h3 id="hyperlinks">Hyperlinks</h3>
-<p>Hyperlinks spielen eine besondere Rolle in HTML da sie die Grundlage für den sog. Hypertext darstellen. Sie liefern die Möglichkeit um unterschiedliche Webseiten miteinander zu verknüpfen. Hyperlinks werden über das <code>a-Tag</code> relisiert (a gilt dabei als Abkürzung für Anchor). Wichtige Attribute von Hyperlinks sind <code>href</code> und <code>target</code>:
+<p>Hyperlinks spielen eine besondere Rolle in HTML da sie die Grundlage für den sog. Hypertext darstellen. Sie liefern die Möglichkeit unterschiedliche Webseiten miteinander zu verknüpfen. Hyperlinks werden über das <code>a-Tag</code> realisiert (a gilt dabei als Abkürzung für Anchor). Wichtige Attribute von Hyperlinks sind <code>href</code> und <code>target</code>:
  - Über <code>href</code> wird eine URL angegeben, welche das Ziel des Hyperlinks definiert.
- - Über <code>target</code> gibt an wie das Hyperlink im Web-Browser geöffnet werden soll. Zum Beispiel wird mit der Angabe <code>_blank</code> ein neues Browserfenster oder ein neuer Tab (je nach Interpretation des Web-Browsers) geöffnet.</p>
+ - Über <code>target</code> wird angegeben wie das Hyperlink im Web-Browser geöffnet werden soll. Zum Beispiel wird mit der Angabe <code>_blank</code> ein neues Browserfenster oder ein neuer Tab (je nach Interpretation des Web-Browsers) geöffnet.</p>
 <p>Beispiel für ein Hyperlink:</p>
 <div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.fh-kufstein.ac.at&quot;</span><span class="p">&gt;</span>Link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </pre></div>
@@ -908,7 +909,7 @@
 
 <h3 id="tabellen">Tabellen</h3>
 <p>Zur Darstellung von tabellarischen Daten werden Tabellen benutzt. Tabellen sollen in keinem Fall dazu verwendet werden um Layouts zu erzeugen.</p>
-<p>Über das <code>table-Tag</code> kann eine Tabelle definiert werden. Zeilen in einer Tabelle werden über das <code>tr-Tag</code> erzeugt. Innerhalb der Zeilen können Zellen definiert werden mit <code>td-Tags</code> (td für Tabledata). Für die Kopfzeile können Zellen mittels <code>th-Tags</code> definiert werden.</p>
+<p>Über das <code>table-Tag</code> kann eine Tabelle definiert werden. Zeilen in einer Tabelle werden über das <code>tr-Tag</code> erzeugt. Innerhalb der Zeilen können Zellen definiert werden mit <code>td-Tags</code> (td für Tabledata). Für die Kopfzeile können Zellen mittels <code>th-Tags</code> (th für Tablehead) definiert werden.</p>
 <div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Band<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
@@ -979,8 +980,8 @@
 <ul>
 <li><code>&lt;main&gt;</code>: Dieses Tag sollte nur einmal pro Webseite verwendet werden und soll als Wrapper für den Hauptinhalt der Webseite fungieren.</li>
 <li><code>&lt;article&gt;</code>: Schließt einen zusammenhängenden Inhalt ein, welcher für sich stehen kann.</li>
-<li><code>&lt;section&gt;</code>: Gruppierungselement um einen zusammenhängenden Teil einer Webseite zu gruppieren.</li>
-<li><code>&lt;aside&gt;</code>: Nicht direkt mit dem <code>&lt;main&gt;</code> Inhalt verknüpfte Inhalte.</li>
+<li><code>&lt;section&gt;</code>: Gruppierungselement um einen zusammenhängenden Teil einer Webseite zusammenzufassen.</li>
+<li><code>&lt;aside&gt;</code>: Nicht direkt mit dem <code>&lt;main&gt;</code> Inhalt verknüpfte Inhalte. Zum Beispiel für wiederkehrende Inhalte auf mehreren Webseiten.</li>
 <li><code>&lt;nav&gt;</code>: Enthält die Hauptnavigation der Website.</li>
 <li><code>&lt;header&gt;</code>: Stellt einleitenden Inhalt dar. </li>
 <li><code>&lt;footer&gt;</code>: Stellt abschließenden Inhalt dar.</li>

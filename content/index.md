@@ -1,19 +1,20 @@
 # Web-Grundlagen
 
-## Folien
+## Übersicht
 
- - [01 Einführung](slides/01.html)
- - [02 HTML](slides/02.html)
- - [03 CSS](slides/03.html)
- - [04 Grafiken im WWW](slides/04.html)
- - [05 CSS-Layouts](slides/05.html)
- - [06 Responsive Web](slides/06.html)
+ - [01 Einführung](texts/01_Einführung)
+ - [02 HTML](texts/02_HTML)
+ - [03 CSS](texts/03_CSS)
+ - [04 Grafik im WWW](texts/04_Grafik)
+ - [05 CSS Layouts](texts/05_CSS_Layouts)
+ - [06 Responsive Web](texts/06_Responsive_Web)
+ - [07 Praktische Aspekte](texts/07_Praktische_Aspekte)
 
 ## Übungen
 
- - [Übung 1](exercises/01.md)
- - [Übung 2](exercises/02.md)
+ - [Übung 1](exercises/01)
+ - [Übung 2](exercises/02)
 
 ## Mitwirkung
 
-Das gesamte Skriptum inkl. Folien und Übungen findet sich innerhalb eines `GIT-Repositories` auf der Platform Github. Über sog. `Pull-Requests` können Änderungen am Inhalt durchgeführt werden. Etwaige Rechtschreibfehler oder Grammatikfehler können natürlich gerne ausgebessert werden.
+Das gesamte Skriptum inkl. Übungen findet sich innerhalb eines [GIT-Repositories](https://github.com/stefanhuber/web-grundlagen) auf der Plattform Github. Über sog. `Pull-Requests` können Änderungen am Inhalt durchgeführt werden. Etwaige Rechtschreibfehler oder Grammatikfehler können natürlich gerne ausgebessert werden.
