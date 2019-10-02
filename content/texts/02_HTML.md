@@ -5,6 +5,7 @@ Die Hypertext Markup Language (HTML) ist eine textbasierte Auszeichnungssprache 
 ## HTML-Markup Regeln
 
 Ein HTML-Element hat mehrere Bestandteile:
+
  - Öffnendes Tag: Ein öffnendes Tag besteht aus den Klammersymbolen `<` und `>` und dem eingeschlossenen Tag-Name (zB `<p>`).
  - Schließendes Tag: Ähnlich zum öffnenden Tag besteht das schließende Tag aus den Klammersymbolen `<` und `>` und dem eingeschlossenen Tag-Namen. Zusätzlich wird durch Angabe des Slash-Symbols (`/`) das schließende Tag markiert (zB `</p>`).
  - Inhalt: Der tatsächliche Inhalt des HTML-Elements kann nur Text sein oder es können auch weitere HTML-Elemente als Kindelemente sein.
@@ -31,6 +32,7 @@ Beispiel für ein HTML-Element mit Attribut:
 ```
 
 Es gibt Ausnahmen, welche nicht den oben beschriebenen allgemeinen Regelungen folgen:
+
  - Leere HTML-Elemente: Es gibt HTML-Elemente, welche keinen expiziten textlichen Inhalt besitzen. Beispiele dafür sind: 
    - `<br>`: Zeilenumbruch
    - `<hr>`: Horizontale Trennline
@@ -173,6 +175,7 @@ Beispiel für eine geordnete Liste:
 ### Hyperlinks
 
 Hyperlinks spielen eine besondere Rolle in HTML da sie die Grundlage für den sog. Hypertext darstellen. Sie liefern die Möglichkeit unterschiedliche Webseiten miteinander zu verknüpfen. Hyperlinks werden über das `a-Tag` realisiert (a gilt dabei als Abkürzung für Anchor). Wichtige Attribute von Hyperlinks sind `href` und `target`:
+
  - Über `href` wird eine URL angegeben, welche das Ziel des Hyperlinks definiert.
  - Über `target` wird angegeben wie das Hyperlink im Web-Browser geöffnet werden soll. Zum Beispiel wird mit der Angabe `_blank` ein neues Browserfenster oder ein neuer Tab (je nach Interpretation des Web-Browsers) geöffnet.
 
@@ -284,5 +287,6 @@ Folgend sollen die wichtigsten Struktur-Elemente kurz beschrieben werden:
 Um eine korrekte Interpretation des HTML-Dokumentes zu gewährleisten, muss sichergestellt werden, dass keinerlei syntaktische Fehler im HTML-Markup vorherrschen. HTML-Validatoren können genutzt werden um ein HTML-Dokument automatisiert auf syntaktische Fehler zu prüfen.
 
 Das W3C stellt einen standardkonformen HTML-Validator zur Verfügung ([https://validator.w3.org](https://validator.w3.org)). Dieser Validator unterscheidet zwischen Fehlern (Error) und Warnungen (Warning):
+
  - Fehler sollten immer behoben werden, da dies ein konkretes syntaktisches Problem bezeichnet.
  - Warnung können behoben werden, diese sind vorranging für Barrierefreiheit und Suchmaschinen vorteilhaft.

@@ -731,11 +731,13 @@
                 <h1 id="html">HTML</h1>
 <p>Die Hypertext Markup Language (HTML) ist eine textbasierte Auszeichnungssprache zur Strukturierung von Webseiten (in diesem Zusammenhang als HTML-Dokumente bezeichnet). HTML basiert auf sog. Tags, welche als Text Bausteine mit den Zeichen <code>&lt;</code> bzw. <code>&gt;</code> definiert werden. HTML dient dabei nur der Strukturierung der Inhalte und legt keinerlei Formatierung fest.</p>
 <h2 id="html-markup-regeln">HTML-Markup Regeln</h2>
-<p>Ein HTML-Element hat mehrere Bestandteile:
- - Öffnendes Tag: Ein öffnendes Tag besteht aus den Klammersymbolen <code>&lt;</code> und <code>&gt;</code> und dem eingeschlossenen Tag-Name (zB <code>&lt;p&gt;</code>).
- - Schließendes Tag: Ähnlich zum öffnenden Tag besteht das schließende Tag aus den Klammersymbolen <code>&lt;</code> und <code>&gt;</code> und dem eingeschlossenen Tag-Namen. Zusätzlich wird durch Angabe des Slash-Symbols (<code>/</code>) das schließende Tag markiert (zB <code>&lt;/p&gt;</code>).
- - Inhalt: Der tatsächliche Inhalt des HTML-Elements kann nur Text sein oder es können auch weitere HTML-Elemente als Kindelemente sein.
- - Attribute: HTML-Elemente können Attribute besitzen, welche zusätzliche Informationen zum HTML-Element liefern, welche nicht Teil des Inhalts sind. Attribute und zugehörige Attributwerte werden im öffnenden Tag angegeben. Das Attribut wird über <code>=</code> vom Attributwert getrennt und der Attributwert wird in <code>"</code> gesetzt.</p>
+<p>Ein HTML-Element hat mehrere Bestandteile:</p>
+<ul>
+<li>Öffnendes Tag: Ein öffnendes Tag besteht aus den Klammersymbolen <code>&lt;</code> und <code>&gt;</code> und dem eingeschlossenen Tag-Name (zB <code>&lt;p&gt;</code>).</li>
+<li>Schließendes Tag: Ähnlich zum öffnenden Tag besteht das schließende Tag aus den Klammersymbolen <code>&lt;</code> und <code>&gt;</code> und dem eingeschlossenen Tag-Namen. Zusätzlich wird durch Angabe des Slash-Symbols (<code>/</code>) das schließende Tag markiert (zB <code>&lt;/p&gt;</code>).</li>
+<li>Inhalt: Der tatsächliche Inhalt des HTML-Elements kann nur Text sein oder es können auch weitere HTML-Elemente als Kindelemente sein.</li>
+<li>Attribute: HTML-Elemente können Attribute besitzen, welche zusätzliche Informationen zum HTML-Element liefern, welche nicht Teil des Inhalts sind. Attribute und zugehörige Attributwerte werden im öffnenden Tag angegeben. Das Attribut wird über <code>=</code> vom Attributwert getrennt und der Attributwert wird in <code>"</code> gesetzt.</li>
+</ul>
 <p>Beispiel für ein HTML-Element:</p>
 <div class="codehilite"><pre><span></span>Öffnendes Tag       Schließendes Tag
       ┌┴┐                 ┌┴─┐
@@ -756,12 +758,14 @@
 </pre></div>
 
 
-<p>Es gibt Ausnahmen, welche nicht den oben beschriebenen allgemeinen Regelungen folgen:
- - Leere HTML-Elemente: Es gibt HTML-Elemente, welche keinen expiziten textlichen Inhalt besitzen. Beispiele dafür sind: 
-   - <code>&lt;br&gt;</code>: Zeilenumbruch
-   - <code>&lt;hr&gt;</code>: Horizontale Trennline
-   - <code>&lt;img&gt;</code>: Bilder
-- Boolsche Attribute: Es gibt Attribute, welche keinerlei Attributwert benötigen. Eine Angabe des Attributes würde einen Attributwert <code>true</code> implizieren. Ein Beispiel für ein boolsches Attribut ist <code>disabled</code>.</p>
+<p>Es gibt Ausnahmen, welche nicht den oben beschriebenen allgemeinen Regelungen folgen:</p>
+<ul>
+<li>Leere HTML-Elemente: Es gibt HTML-Elemente, welche keinen expiziten textlichen Inhalt besitzen. Beispiele dafür sind: </li>
+<li><code>&lt;br&gt;</code>: Zeilenumbruch</li>
+<li><code>&lt;hr&gt;</code>: Horizontale Trennline</li>
+<li><code>&lt;img&gt;</code>: Bilder</li>
+<li>Boolsche Attribute: Es gibt Attribute, welche keinerlei Attributwert benötigen. Eine Angabe des Attributes würde einen Attributwert <code>true</code> implizieren. Ein Beispiel für ein boolsches Attribut ist <code>disabled</code>.</li>
+</ul>
 <h2 id="besondere-syntaktische-konstrukte">Besondere syntaktische Konstrukte</h2>
 <h3 id="html-kommentare">HTML Kommentare</h3>
 <p>In den meisten Programmier- bzw. Auszeichnungssprachen gibt es Kommentare, welche vom Web-Browser zur Generierung der Anzeige ignoriert werden.</p>
@@ -892,9 +896,11 @@
 
 
 <h3 id="hyperlinks">Hyperlinks</h3>
-<p>Hyperlinks spielen eine besondere Rolle in HTML da sie die Grundlage für den sog. Hypertext darstellen. Sie liefern die Möglichkeit unterschiedliche Webseiten miteinander zu verknüpfen. Hyperlinks werden über das <code>a-Tag</code> realisiert (a gilt dabei als Abkürzung für Anchor). Wichtige Attribute von Hyperlinks sind <code>href</code> und <code>target</code>:
- - Über <code>href</code> wird eine URL angegeben, welche das Ziel des Hyperlinks definiert.
- - Über <code>target</code> wird angegeben wie das Hyperlink im Web-Browser geöffnet werden soll. Zum Beispiel wird mit der Angabe <code>_blank</code> ein neues Browserfenster oder ein neuer Tab (je nach Interpretation des Web-Browsers) geöffnet.</p>
+<p>Hyperlinks spielen eine besondere Rolle in HTML da sie die Grundlage für den sog. Hypertext darstellen. Sie liefern die Möglichkeit unterschiedliche Webseiten miteinander zu verknüpfen. Hyperlinks werden über das <code>a-Tag</code> realisiert (a gilt dabei als Abkürzung für Anchor). Wichtige Attribute von Hyperlinks sind <code>href</code> und <code>target</code>:</p>
+<ul>
+<li>Über <code>href</code> wird eine URL angegeben, welche das Ziel des Hyperlinks definiert.</li>
+<li>Über <code>target</code> wird angegeben wie das Hyperlink im Web-Browser geöffnet werden soll. Zum Beispiel wird mit der Angabe <code>_blank</code> ein neues Browserfenster oder ein neuer Tab (je nach Interpretation des Web-Browsers) geöffnet.</li>
+</ul>
 <p>Beispiel für ein Hyperlink:</p>
 <div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.fh-kufstein.ac.at&quot;</span><span class="p">&gt;</span>Link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </pre></div>
@@ -988,9 +994,11 @@
 </ul>
 <h2 id="validitat-von-html">Validität von HTML</h2>
 <p>Um eine korrekte Interpretation des HTML-Dokumentes zu gewährleisten, muss sichergestellt werden, dass keinerlei syntaktische Fehler im HTML-Markup vorherrschen. HTML-Validatoren können genutzt werden um ein HTML-Dokument automatisiert auf syntaktische Fehler zu prüfen.</p>
-<p>Das W3C stellt einen standardkonformen HTML-Validator zur Verfügung (<a href="https://validator.w3.org">https://validator.w3.org</a>). Dieser Validator unterscheidet zwischen Fehlern (Error) und Warnungen (Warning):
- - Fehler sollten immer behoben werden, da dies ein konkretes syntaktisches Problem bezeichnet.
- - Warnung können behoben werden, diese sind vorranging für Barrierefreiheit und Suchmaschinen vorteilhaft.</p>
+<p>Das W3C stellt einen standardkonformen HTML-Validator zur Verfügung (<a href="https://validator.w3.org">https://validator.w3.org</a>). Dieser Validator unterscheidet zwischen Fehlern (Error) und Warnungen (Warning):</p>
+<ul>
+<li>Fehler sollten immer behoben werden, da dies ein konkretes syntaktisches Problem bezeichnet.</li>
+<li>Warnung können behoben werden, diese sind vorranging für Barrierefreiheit und Suchmaschinen vorteilhaft.</li>
+</ul>
                 
                   
                 
