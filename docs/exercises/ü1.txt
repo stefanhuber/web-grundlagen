@@ -1,0 +1,28 @@
+Web-Grundlagen Übung 1
+
+Lernziele Web-Grundlagen & Web-Design
+
+Im folgenden werden die Lernziele der Lehrveranstaltung Web-Grundlagen & Web-Design an der FH Kufstein Tirol beschrieben.
+
+Studierende erhalten die grundlegenden Fertigkeiten um Webseiten zu strukturieren und zu gestalten.
+Studierende können HTML und CSS als grundlegende Techniken, um Webseiten zu entwickeln, verwenden.
+Studierende kennen wesentliche Gestaltungsprinzipien um ein Web-Design zu beurteilen bzw. zu entwerfen.
+Studierende sind in der Lage ein bestehendes Web-Design (zB in Photoshop) in HTML und CSS zu realisieren.
+
+Termine (Web-Grundlagen)
+
+Termin Datum Einheiten
+1. Termin 03.10.2019 4
+2. Termin 07.10.2019 4
+3. Termin 21.10.2019 4
+4. Termin 04.11.2019 3
+
+Kontaktformular
+Name
+Personenkennzahl
+Nachricht
+Priorität
+Niedrig
+Mittel
+Hoch
+Absenden
