@@ -8,7 +8,7 @@ Ein HTML-Element hat mehrere Bestandteile:
 
  - Öffnendes Tag: Ein öffnendes Tag besteht aus den Klammersymbolen `<` und `>` und dem eingeschlossenen Tag-Name (zB `<p>`).
  - Schließendes Tag: Ähnlich zum öffnenden Tag besteht das schließende Tag aus den Klammersymbolen `<` und `>` und dem eingeschlossenen Tag-Namen. Zusätzlich wird durch Angabe des Slash-Symbols (`/`) das schließende Tag markiert (zB `</p>`).
- - Inhalt: Der tatsächliche Inhalt des HTML-Elements kann nur Text sein oder es können auch weitere HTML-Elemente als Kindelemente sein.
+ - Inhalt: Der tatsächliche Inhalt des HTML-Elements kann entweder reiner Text oder weitere HTML-Elemente als Kindelemente sein.
  - Attribute: HTML-Elemente können Attribute besitzen, welche zusätzliche Informationen zum HTML-Element liefern, welche nicht Teil des Inhalts sind. Attribute und zugehörige Attributwerte werden im öffnenden Tag angegeben. Das Attribut wird über `=` vom Attributwert getrennt und der Attributwert wird in `"` gesetzt.
 
 Beispiel für ein HTML-Element:
@@ -41,7 +41,7 @@ Es gibt Ausnahmen, welche nicht den oben beschriebenen allgemeinen Regelungen fo
 
 ## Besondere syntaktische Konstrukte
 
-### HTML Kommentare
+### HTML-Kommentare
 
 In den meisten Programmier- bzw. Auszeichnungssprachen gibt es Kommentare, welche vom Web-Browser zur Generierung der Anzeige ignoriert werden.
 
@@ -51,7 +51,7 @@ Kommentare werden mit der Symbolfolge `<!--` gestartet und mit `-->` beendet.
 <!-- Ein Beispiel Kommentar -->
 ```
 
-### HTML Entities
+### HTML-Entities
 
 Es gibt unter anderem die Zeichen `<`, `>`, `"`, `&` welche Teil der HTML Syntax sind. Diese Zeichen müssen als spezielle `HTML-Entity` angegeben werden.
 
