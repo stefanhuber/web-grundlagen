@@ -309,6 +309,47 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#besondere-syntaktische-konstrukte" class="md-nav__link">
+    Besondere syntaktische Konstrukte
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kurzschreibweise" class="md-nav__link">
+    Kurzschreibweise
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#css-kommentare" class="md-nav__link">
+    CSS-Kommentare
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitespace" class="md-nav__link">
+    Whitespace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-regeln" class="md-nav__link">
+    @-Regeln
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#css-stylesheets-einbinden" class="md-nav__link">
     CSS-Stylesheets einbinden
   </a>
@@ -578,6 +619,47 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#besondere-syntaktische-konstrukte" class="md-nav__link">
+    Besondere syntaktische Konstrukte
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kurzschreibweise" class="md-nav__link">
+    Kurzschreibweise
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#css-kommentare" class="md-nav__link">
+    CSS-Kommentare
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitespace" class="md-nav__link">
+    Whitespace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-regeln" class="md-nav__link">
+    @-Regeln
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#css-stylesheets-einbinden" class="md-nav__link">
     CSS-Stylesheets einbinden
   </a>
@@ -748,6 +830,104 @@
 </pre></div>
 
 
+<h2 id="besondere-syntaktische-konstrukte">Besondere syntaktische Konstrukte</h2>
+<h3 id="kurzschreibweise">Kurzschreibweise</h3>
+<p>Für manche CSS-Eigenschaften wird eine Kurzschreibweise angeboten um diese zu gruppieren. <code>padding</code>, <code>margin</code> oder <code>border</code> sind Beispiele für diese Kurzschreibweise.</p>
+<p>Um für ein <code>div</code> einen Außenabstand von <code>15px</code> an allen Seiten zu setzen kann die Kurzschreibweise <code>margin</code> verwendet werden:</p>
+<div class="codehilite"><pre><span></span><span class="nt">div</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="p">:</span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Ohne Kurzschreibweise müsste jede Seite (Oben, Rechts, Unten, Links) einzeln definiert werden:</p>
+<div class="codehilite"><pre><span></span><span class="nt">div</span> <span class="p">{</span>
+  <span class="k">margin-top</span><span class="p">:</span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">margin-right</span><span class="p">:</span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">margin-bottom</span><span class="p">:</span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">margin-left</span><span class="p">:</span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Die Kurzsschreibweise kann auch genutzt werden um für jede Seite einen individuellen Wert anzugeben. Dabei liegt der Wertangabe folgende Ordnung zugrunde:</p>
+<ul>
+<li>
+<ol>
+<li>Wert für Oben (<code>margin-top</code>)</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Wert für Rechts (<code>margin-right</code>)</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Wert für Unten (<code>margin-bottom</code>)</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Wert für Links (<code>margin-left</code>)</li>
+</ol>
+</li>
+</ul>
+<p>```css
+div {
+  margin:5px 10px 2px 12px;
+}</p>
+<div class="codehilite"><pre><span></span><span class="c1">### Funktionen</span>
+
+<span class="n">CSS</span> <span class="n">bietet</span> <span class="n">Funktionen</span><span class="p">,</span> <span class="n">welche</span> <span class="n">zur</span> <span class="n">Spezifikation</span> <span class="n">von</span> <span class="n">Werten</span> <span class="n">für</span> <span class="n">CSS</span><span class="o">-</span><span class="n">Eigenschaften</span> <span class="n">genutzt</span> <span class="n">werden</span> <span class="n">können</span><span class="p">.</span> <span class="n">Beispiele</span> <span class="n">für</span> <span class="n">Funktionen</span> <span class="n">sind</span> <span class="ss">`calc`</span><span class="p">,</span> <span class="ss">`url`</span><span class="p">,</span> <span class="ss">`rgb`</span> <span class="n">oder</span> <span class="ss">`hsl`</span><span class="p">.</span>
+
+<span class="n">Manche</span> <span class="n">CSS</span><span class="o">-</span><span class="n">Eigenschaften</span> <span class="n">benötigen</span> <span class="n">eine</span> <span class="n">Web</span><span class="o">-</span><span class="n">Ressource</span> <span class="n">als</span> <span class="n">Wert</span><span class="p">.</span> <span class="n">Ein</span> <span class="n">Hintergrundbild</span> <span class="n">wird</span> <span class="err">ü</span><span class="n">ber</span> <span class="n">die</span> <span class="n">Angabe</span> <span class="n">einer</span> <span class="n">URL</span> <span class="n">eingebunden</span><span class="p">:</span>
+
+<span class="ss">``</span><span class="o">`</span><span class="n">css</span>
+<span class="k">div</span> <span class="err">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">image</span><span class="p">:</span><span class="nf">url</span><span class="p">(</span><span class="n">images</span><span class="o">/</span><span class="n">fance</span><span class="o">-</span><span class="n">background</span><span class="p">.</span><span class="n">jpg</span><span class="p">);</span>
+<span class="err">}</span>
+</pre></div>
+
+
+<p>Nummerische Wertangaben können auch berechnet werden. Eine Breite eines HTML-Elements könnte zum Beispiel so definiert sein, dass sie genau <code>50px</code> kleiner sein soll als <code>100%</code>:</p>
+<div class="codehilite"><pre><span></span><span class="nt">div</span> <span class="p">{</span>
+  <span class="k">width</span><span class="p">:</span><span class="nb">calc</span><span class="p">(</span><span class="mi">100</span><span class="kt">%</span> <span class="o">-</span> <span class="mi">50</span><span class="kt">px</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="css-kommentare">CSS-Kommentare</h3>
+<p>Ähnlich zu HTML-Dokumenten können auch in CSS-Stylesheets Kommentare eingefügt werden. In CSS gibt es dafür aber eine andere Syntax als in HTML. Ein Kommentar wird über <code>/*</code> eingeleitet und mit <code>*/</code> beendet.</p>
+<div class="codehilite"><pre><span></span><span class="c">/* ein mehrzeiliger</span>
+<span class="c">   Beispiel Kommentar */</span>
+</pre></div>
+
+
+<h3 id="whitespace">Whitespace</h3>
+<p>Whitespace (Leerräume, Zeilenumbrüche, Tabs, ...) werden großteils ignoriert und dienen nur der Quellcodeformatierung. Es gibt jedoch einige Stellen an denen Whitespace von wichtiger Bedeutung ist.</p>
+<p>Leerräume werden verwendet um einzelne Bestandteile eines CSS-Selektors zu trennen:</p>
+<div class="codehilite"><pre><span></span><span class="nt">div</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+  <span class="c">/* CSS-Eigenschaften... */</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Leerräume werden verwendet um mehrere Werte zu den entsprechenden CSS-Eigenschaften in Kurzschreibweise anzugeben:</p>
+<div class="codehilite"><pre><span></span><span class="nt">p</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">5</span><span class="kt">px</span> <span class="mi">13</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="-regeln">@-Regeln</h2>
+<p>CSS definiert noch einige sog. <code>@-Rules</code>, welche für spezielle Verarbeitungsschritte oder Bedinungen genutzt werden. Beispiele sind <code>@import</code>, <code>@media</code>, <code>@keyframes</code> oder <code>@font-face</code>.</p>
+<p>Mit <code>@import</code> kann ein CSS-Stylesheet eingebunden werden. Dies ist hilfreich um die gesamte CSS Styledefinition in mehrere Dateien auszulagern. Gerade bei sehr großen Websites macht dies Sinn um die Wartbarkeit zu erhöhen:</p>
+<div class="codehilite"><pre><span></span><span class="p">@</span><span class="k">import</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;styles/layout.css&#39;</span><span class="o">)</span><span class="p">;</span>
+<span class="p">@</span><span class="k">import</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;styles/headings.css&#39;</span><span class="o">)</span><span class="p">;</span>
+</pre></div>
+
+
 <h2 id="css-stylesheets-einbinden">CSS-Stylesheets einbinden</h2>
 <ul>
 <li>Externer Stylesheet: Alle CSS-Regeln werden innerhalb einer eigenen Datei CSS-Datei beschrieben und über das <code>link-Tag</code> im HTML-Head eingebunden</li>
@@ -797,7 +977,7 @@
 </tbody>
 </table>
 <h3 id="relative-wertangaben">Relative Wertangaben</h3>
-<p>Relative Wertangaben orientieren sich anhand einer anderen Wertangabe (zB Viewport, font-size des aktuellen HTML-Elements). Relative Wertangaben haben den Vorteil, dass sie sich besser anpassen auf unterschiedliche Ausgabemedien.</p>
+<p>Relative Wertangaben orientieren sich an einer bestehenden anderen Wertangabe (zB Viewport, font-size) des aktuellen HTML-Elements. Relative Wertangaben haben den Vorteil, dass sie sich besser anpassen auf unterschiedliche Ausgabemedien.</p>
 <table>
 <thead>
 <tr>
@@ -816,11 +996,11 @@
 </tr>
 <tr>
 <td><code>vw</code></td>
-<td>Relativ zu <code>1%</code> der Viewport-Breite</td>
+<td>Ein Hundertstel der Viewport-Breite</td>
 </tr>
 <tr>
 <td><code>vh</code></td>
-<td>Relativ zu <code>1%</code> der Viewport-Höhe</td>
+<td>Ein Hundertstel der Viewport-Höhe</td>
 </tr>
 <tr>
 <td><code>%</code></td>

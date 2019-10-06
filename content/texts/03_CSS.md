@@ -26,6 +26,104 @@ a.my-class, #id123 {
 }
 ```
 
+## Besondere syntaktische Konstrukte
+
+### Kurzschreibweise
+
+Für manche CSS-Eigenschaften wird eine Kurzschreibweise angeboten um diese zu gruppieren. `padding`, `margin` oder `border` sind Beispiele für diese Kurzschreibweise.
+
+Um für ein `div` einen Außenabstand von `15px` an allen Seiten zu setzen kann die Kurzschreibweise `margin` verwendet werden:
+
+```css
+div {
+  margin:15px;
+}
+```
+
+Ohne Kurzschreibweise müsste jede Seite (Oben, Rechts, Unten, Links) einzeln definiert werden:
+
+```css
+div {
+  margin-top:15px;
+  margin-right:15px;
+  margin-bottom:15px;
+  margin-left:15px;
+}
+```
+
+Die Kurzsschreibweise kann auch genutzt werden um für jede Seite einen individuellen Wert anzugeben. Dabei liegt der Wertangabe folgende Ordnung zugrunde:
+
+ - 1. Wert für Oben (`margin-top`)
+ - 2. Wert für Rechts (`margin-right`)
+ - 3. Wert für Unten (`margin-bottom`)
+ - 4. Wert für Links (`margin-left`)
+
+ ```css
+div {
+  margin:5px 10px 2px 12px;
+}
+```
+
+### Funktionen
+
+CSS bietet Funktionen, welche zur Spezifikation von Werten für CSS-Eigenschaften genutzt werden können. Beispiele für Funktionen sind `calc`, `url`, `rgb` oder `hsl`.
+
+Manche CSS-Eigenschaften benötigen eine Web-Ressource als Wert. Ein Hintergrundbild wird über die Angabe einer URL eingebunden:
+
+```css
+div {
+  background-image:url(images/fance-background.jpg);
+}
+```
+
+Nummerische Wertangaben können auch berechnet werden. Eine Breite eines HTML-Elements könnte zum Beispiel so definiert sein, dass sie genau `50px` kleiner sein soll als `100%`:
+
+```css
+div {
+  width:calc(100% - 50px);
+}
+```
+
+### CSS-Kommentare
+
+Ähnlich zu HTML-Dokumenten können auch in CSS-Stylesheets Kommentare eingefügt werden. In CSS gibt es dafür aber eine andere Syntax als in HTML. Ein Kommentar wird über `/*` eingeleitet und mit `*/` beendet.
+
+```css
+/* ein mehrzeiliger
+   Beispiel Kommentar */
+```
+
+### Whitespace
+
+Whitespace (Leerräume, Zeilenumbrüche, Tabs, ...) werden großteils ignoriert und dienen nur der Quellcodeformatierung. Es gibt jedoch einige Stellen an denen Whitespace von wichtiger Bedeutung ist.
+
+Leerräume werden verwendet um einzelne Bestandteile eines CSS-Selektors zu trennen:
+
+```css
+div a:hover {
+  /* CSS-Eigenschaften... */
+}
+```
+
+Leerräume werden verwendet um mehrere Werte zu den entsprechenden CSS-Eigenschaften in Kurzschreibweise anzugeben:
+
+```css
+p {
+  margin: 10px 5px 13px 0;
+}
+```
+
+## @-Regeln
+
+CSS definiert noch einige sog. `@-Rules`, welche für spezielle Verarbeitungsschritte oder Bedinungen genutzt werden. Beispiele sind `@import`, `@media`, `@keyframes` oder `@font-face`.
+
+Mit `@import` kann ein CSS-Stylesheet eingebunden werden. Dies ist hilfreich um die gesamte CSS Styledefinition in mehrere Dateien auszulagern. Gerade bei sehr großen Websites macht dies Sinn um die Wartbarkeit zu erhöhen:
+
+```css
+@import url('styles/layout.css');
+@import url('styles/headings.css');
+```
+
 ## CSS-Stylesheets einbinden
 
  - Externer Stylesheet: Alle CSS-Regeln werden innerhalb einer eigenen Datei CSS-Datei beschrieben und über das `link-Tag` im HTML-Head eingebunden
@@ -55,14 +153,14 @@ Viele CSS-Eigenschaften verlangen eine Wertangabe als Deklaration (zB `width`, `
 
 ### Relative Wertangaben
 
-Relative Wertangaben orientieren sich anhand einer anderen Wertangabe (zB Viewport, font-size des aktuellen HTML-Elements). Relative Wertangaben haben den Vorteil, dass sie sich besser anpassen auf unterschiedliche Ausgabemedien.
+Relative Wertangaben orientieren sich an einer bestehenden anderen Wertangabe (zB Viewport, font-size) des aktuellen HTML-Elements. Relative Wertangaben haben den Vorteil, dass sie sich besser anpassen auf unterschiedliche Ausgabemedien.
 
 | Einheit | Beschreibung |
 | --- | --- |
 | `em` | Relativ zur `font-size` des HTML-Elements (`2em` würde bedeuten 2x so groß wie die aktuelle `font-size`) |
 | `rem` | Relativ zur `font-size` des Wurzel HTML-Elements (`2rem` würde bedeuten 2x so groß wie die definierte `font-size` im `html` Element) |
-| `vw` | Relativ zu `1%` der Viewport-Breite |
-| `vh` | Relativ zu `1%` der Viewport-Höhe |
+| `vw` | Ein Hundertstel der Viewport-Breite |
+| `vh` | Ein Hundertstel der Viewport-Höhe |
 | `%` | Definiert den Wert relativ zum Elternelement |
 
 Es sind noch weitere Einheiten definiert, welche jedoch eher selten genutzt werden: `ex`, `ch`, `vmin`, `vmax`.
