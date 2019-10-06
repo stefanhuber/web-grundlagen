@@ -58,7 +58,7 @@ Die Kurzsschreibweise kann auch genutzt werden um für jede Seite einen individu
  3. Wert für Unten (`margin-bottom`)
  4. Wert für Links (`margin-left`)
 
- ```css
+```css
 div {
   margin:5px 10px 2px 12px;
 }
@@ -72,7 +72,7 @@ Manche CSS-Eigenschaften benötigen eine Web-Ressource als Wert. Ein Hintergrund
 
 ```css
 div {
-  background-image:url(images/fance-background.jpg);
+  background-image:url('images/fance-background.jpg');
 }
 ```
 
