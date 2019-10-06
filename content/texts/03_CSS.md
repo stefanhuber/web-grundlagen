@@ -53,10 +53,10 @@ div {
 
 Die Kurzsschreibweise kann auch genutzt werden um für jede Seite einen individuellen Wert anzugeben. Dabei liegt der Wertangabe folgende Ordnung zugrunde:
 
- - 1. Wert für Oben (`margin-top`)
- - 2. Wert für Rechts (`margin-right`)
- - 3. Wert für Unten (`margin-bottom`)
- - 4. Wert für Links (`margin-left`)
+ 1. Wert für Oben (`margin-top`)
+ 2. Wert für Rechts (`margin-right`)
+ 3. Wert für Unten (`margin-bottom`)
+ 4. Wert für Links (`margin-left`)
 
  ```css
 div {
