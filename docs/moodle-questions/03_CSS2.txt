@@ -1,9 +1,11 @@
-::103::[html]<p>Berechnen Sie die physischen Pixel der Einheit 12dp in einer xxhdpi Auflösung?</p>{}
+::1031::[html]<p>Konvertieren Sie die Hexadezimalzahl #f35 in Dezimal.</p>{}
 
-::103::[html]<p>Im Kontext eines Touch-Ereignisses soll herausgefunden werden wieviele Finger sich am Display befinden. Wie könnte man das bewerkstelligen?</p>{}
+::1032::[html]<p>Konvertieren Sie die Hexadezimalzahl #a6b in Dezimal.</p>{}
 
-::103::[html]<p>Beschreiben Sie kurz wie man ein Rechteck auf einer Canvas zeichnen könnte und welche Parameter dafür wichtig sind.</p>{}
+::1033::[html]<p>Verringern Sie die Sättigung der Farbe #00FF00 um 30% und geben Sie das Resultat in Hex an.</p>{}
 
-::103::[html]<p>Wie würde das XML eines Shape Drawables aussehen mit folgenden Vorgaben: Blaues Rechteck mit roten Rahmen, runden Ecken und einer Größe 100x50 (Breite x Höhe)</p>{}
+::1034::[html]<p>Erhöhen Sie die Helligkeit der Farbe #00FFFF um 25% und geben Sie das Resultat in Hex an.</p>{}
 
-::103::[html]<p>Welche Library benötigt man um eine RecyclerView zu nutzen, bzw. wie kann diese Library in einem Projekt hinzugefügt werden?</p>{}
+::1035::[html]<p>Wie würde ein grüner Kreis mit blauem Rahmen in SVG beschrieben werden?</p>{}
+
+::1036::[html]<p>Wie würde ein gelbes Rechteck mit rotem Rahmen in SVG beschriben werden?</p>{}
