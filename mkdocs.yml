@@ -17,6 +17,8 @@ nav:
   - 'Übungen':
     - 'Übung 1': 'exercises/01.md'
     - 'Übung 2': 'exercises/02.md'
+    - 'Übung 3': 'exercises/03.md'
+    - 'Übung 4': 'exercises/04.md'
 
 
 theme: 

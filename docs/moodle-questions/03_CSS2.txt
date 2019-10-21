@@ -1,0 +1,9 @@
+::103::[html]<p>Berechnen Sie die physischen Pixel der Einheit 12dp in einer xxhdpi Auflösung?</p>{}
+
+::103::[html]<p>Im Kontext eines Touch-Ereignisses soll herausgefunden werden wieviele Finger sich am Display befinden. Wie könnte man das bewerkstelligen?</p>{}
+
+::103::[html]<p>Beschreiben Sie kurz wie man ein Rechteck auf einer Canvas zeichnen könnte und welche Parameter dafür wichtig sind.</p>{}
+
+::103::[html]<p>Wie würde das XML eines Shape Drawables aussehen mit folgenden Vorgaben: Blaues Rechteck mit roten Rahmen, runden Ecken und einer Größe 100x50 (Breite x Höhe)</p>{}
+
+::103::[html]<p>Welche Library benötigt man um eine RecyclerView zu nutzen, bzw. wie kann diese Library in einem Projekt hinzugefügt werden?</p>{}

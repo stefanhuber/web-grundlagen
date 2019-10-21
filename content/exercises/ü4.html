@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web-Grundlagen Übung 4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<nav>
+		<ul>
+			<li><a href>Tabellen</a>
+				<ul>
+					<li><a href="#table-separate">fixed Layout</a></li>
+					<li><a href="#table-separate">border-spacing</a></li>
+					<li><a href="#table-collapse">border-collapse: collapse</a></li>
+					<li><a href="#table-span">colspan/rowspan</a></li>
+				</ul>
+			</li>
+			<li><a href="#transform">Transformationen</a></li>
+			<li><a href>Positionierungen</a>
+				<ul>
+					<li><a href="#relative-positioning">relative Positionierung</a></li>
+					<li><a href="#relative-positioning-z">relative Positionierung (z-index)</a></li>
+					<li><a href="#absolute-positioning">absolute Positionierung</a></li>
+				</ul>
+			</li>
+			<li><a href="#transitions">Animationen</a>
+				<ul>
+					<li></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	<header>
+		<h1>Beispiele zur CSS-Vertiefung</h1>
+	</header>
+	
+	<main>
+		
+		<section id="table-fixed">
+			<h1>Tabelle: fixed Layout</h1>
+			
+			<table>
+				<tr>
+					<th>Engine</th>
+					<th>Status</th>
+					<th>Steward</th>
+					<th>License</th>
+					<th>Embedded in</th>
+				</tr>
+				<tr>
+					<td>Blink</td>
+					<td>Active</td>
+					<td>Google</td>
+					<td>GNU LGPL, BSD-style</td>
+					<td>Google Chrome and Chromium, plus many other browsers including Opera and Vivaldi</td>
+				</tr>
+				<tr>
+					<td>EdgeHTML</td>
+					<td>Active</td>
+					<td>Microsoft</td>
+					<td>Proprietary</td>
+					<td>Microsoft Edge browser and Universal Windows Platform apps</td> 
+				</tr>
+				<tr>
+					<td>WebKit</td>
+					<td>Active</td>
+					<td>Apple</td>
+					<td>GNU LGPL, BSD-style</td>
+					<td>Safari browser, Adobe AIR apps, and other browsers like Maxthon</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section id="table-border-spacing">
+			<h1>Tabelle: border-spacing</h1>
+			
+			<table>
+				<tr>
+					<th>Engine</th>
+					<th>Status</th>
+					<th>Steward</th>
+					<th>License</th>
+					<th>Embedded in</th>
+				</tr>
+				<tr>
+					<td>Blink</td>
+					<td>Active</td>
+					<td>Google</td>
+					<td>GNU LGPL, BSD-style</td>
+					<td>Google Chrome and Chromium, plus many other browsers including Opera and Vivaldi</td>
+				</tr>
+				<tr>
+					<td>EdgeHTML</td>
+					<td>Active</td>
+					<td>Microsoft</td>
+					<td>Proprietary</td>
+					<td>Microsoft Edge browser and Universal Windows Platform apps</td> 
+				</tr>
+				<tr>
+					<td>WebKit</td>
+					<td>Active</td>
+					<td>Apple</td>
+					<td>GNU LGPL, BSD-style</td>
+					<td>Safari browser, Adobe AIR apps, and other browsers like Maxthon</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section id="table-collapse">
+			<h1>Tabelle: collapse</h1>
+			
+			<table>
+				<tr>
+					<th>Engine</th>
+					<th>Status</th>
+					<th>Steward</th>
+					<th>License</th>
+					<th>Embedded in</th>
+				</tr>
+				<tr>
+					<td>Blink</td>
+					<td>Active</td>
+					<td>Google</td>
+					<td>GNU LGPL, BSD-style</td>
+					<td>Google Chrome and Chromium, plus many other browsers including Opera and Vivaldi</td>
+				</tr>
+				<tr>
+					<td>EdgeHTML</td>
+					<td>Active</td>
+					<td>Microsoft</td>
+					<td>Proprietary</td>
+					<td>Microsoft Edge browser and Universal Windows Platform apps</td> 
+				</tr>
+				<tr>
+					<td>WebKit</td>
+					<td>Active</td>
+					<td>Apple</td>
+					<td>GNU LGPL, BSD-style</td>
+					<td>Safari browser, Adobe AIR apps, and other browsers like Maxthon</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section id="table-span">
+			<h1>Tabelle: colspan/rowspan</h1>
+			
+			<table>
+				<tr>
+					<td></td>
+					<td colspan="2"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td rowspan="3"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="2"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</section>
+		
+				
+		<section id="transform">
+			<h1>CSS Transformationen</h1>
+			
+			<div id="box1"></div>
+			
+			<div id="box2"></div>
+			
+			<div id="box3"></div>
+			
+			<div id="box4"></div>
+			
+		</section>
+		
+		<section id="relative-positioning">
+			<h1>Relative Positionierung</h1>
+			<div class="element"></div>
+			<div class="element position-element"></div>
+			<div class="element"></div>
+			<div class="element"></div>
+		</section>
+		
+		<section id="relative-positioning-z">
+			<h1>Relative Positionierung (Veränderung z-index)</h1>
+			<div class="element"></div>
+			<div class="element position-element"></div>
+			<div class="element"></div>
+			<div class="element"></div>
+		</section>
+		
+		<section id="absolute-positioning">
+			<h1>Absolute Positionierung</h1>
+			
+			<div class="absolute-wrapper">
+				<div class="element"></div>
+				<div class="element position-element"></div>
+				<div class="element"></div>
+				<div class="element"></div>
+			</div>
+		</section>
+		
+		<section id="transitions">
+			<h1>Animationen</h1>
+			
+			<div class="element"></div>
+			<div class="element"></div>
+			<div class="element"></div>
+			<div class="element"></div>
+			<div class="element"></div>			
+			
+		</section>
+	
+	</main>
+		
+  </body>
+</html>

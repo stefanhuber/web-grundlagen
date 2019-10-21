@@ -14,6 +14,8 @@
 
  - [Übung 1](exercises/01)
  - [Übung 2](exercises/02)
+ - [Übung 3](exercises/03)
+ - [Übung 4](exercises/04)
 
 ## Mitwirkung
 
