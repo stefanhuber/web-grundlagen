@@ -1,11 +1,33 @@
-::1031::[html]<p>Konvertieren Sie die Hexadezimalzahl #f35 in Dezimal.</p>{}
+::CSS-Vertiefung 1::
+[html]<p>Konvertieren Sie die Hexadezimalzahl \#f35 in Dezimal.</p>{
+	=3893
+}
 
-::1032::[html]<p>Konvertieren Sie die Hexadezimalzahl #a6b in Dezimal.</p>{}
+::CSS-Vertiefung 2::
+[html]<p>Konvertieren Sie die Hexadezimalzahl \#a6b in Dezimal.</p>{
+	=2667
+}
 
-::1033::[html]<p>Verringern Sie die Sättigung der Farbe #00FF00 um 30% und geben Sie das Resultat in Hex an.</p>{}
+::CSS-Vertiefung 3::
+[html]<p>Verringern Sie die Sättigung der Farbe \#00FF00 um 30% und geben Sie das Resultat in Hex an.</p>
+{
+	=\#4DFF4D
+}
 
-::1034::[html]<p>Erhöhen Sie die Helligkeit der Farbe #00FFFF um 25% und geben Sie das Resultat in Hex an.</p>{}
+::CSS-Vertiefung 4::
+[html]<p>Erhöhen Sie die Helligkeit der Farbe \#00FFFF um 25% und geben Sie das Resultat in Hex an.</p>
+{
+	=\#80FFFF
+}
 
-::1035::[html]<p>Wie würde ein grüner Kreis mit blauem Rahmen in SVG beschrieben werden?</p>{}
+::CSS-Vertiefung 5::
+[html]<p>Wie würde ein grüner Kreis mit blauem Rahmen in SVG beschrieben werden?</p>
+{
+	=&lt;svg&gt;&lt;circle cx\="70" cy\="80" r\="40" style\="fill\:rgb(0,255,0);stroke\:rgb(0,0,255);stroke-width\:6" /&gt;&lt;/svg&gt;
+}
 
-::1036::[html]<p>Wie würde ein gelbes Rechteck mit rotem Rahmen in SVG beschriben werden?</p>{}
+::CSS-Vertiefung 6::
+[html]<p>Wie würde ein gelbes Rechteck mit rotem Rahmen in SVG beschrieben werden?</p>
+{
+	=&lt;svg&gt;&lt;rect cx\="70" cy\="80" r\="40" style\="fill\:rgb(255,255,0);stroke\:rgb(255,0,0);stroke-width\:6" /&gt;&lt;/svg&gt;
+}

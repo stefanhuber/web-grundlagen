@@ -1,54 +1,71 @@
-::HTML 1::[html]<p>Wie würden Sie ein Hyperlink auf die Website "https://www.fh-kufstein.ac.at" mit Linktext "Home" angeben?<br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%<a href="https://www.fh-kufstein.ac.at">Home</a>#		
-	=%0%*#
+::HTML 1::
+[html]<p>Wie würden Sie ein Hyperlink auf die Website "https\:\/\/www.fh-kufstein.ac.at" mit Linktext "Home" angeben?<br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=&lt;a href\="https\://www.fh-kufstein.ac.at"&gt;Home&lt;/a&gt;
 }
 
-::HTML 2::[html]<p>Welches Tag wird für geordnete Listen verwendet?<br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%ol#		
-	=%0%*#
+::HTML 2::
+[html]<p>Welches Tag wird für geordnete Listen verwendet?<br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=ol
+	=&lt;ol&gt;
 }
 
-::HTML 3::[html]<p>Welches Tag wird für ungeordnete Listen verwendet?<br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%ul#		
-	=%0%*#
+::HTML 3::
+[html]<p>Welches Tag wird für ungeordnete Listen verwendet?<br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=ul
+	=&lt;ul&gt;
 }
 
-::HTML 4::[html]<p>Welches Tag wird für Überschriften der Ebene 3 verwendet?<br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%h3#		
-	=%0%*#
+::HTML 4::
+[html]<p>Welches Tag wird für Überschriften der Ebene 3 verwendet?<br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=h3
+	=&lt;h3&gt;
 }
 
-::HTML 5::[html]<p>Welcher Wert für das Attribut "type" wird für Checkbox Eingabefelder verwendet?<br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%checkbox#		
-	=%0%*#
+::HTML 5::
+[html]<p>Welcher Wert für das Attribut "type" wird für Checkbox Eingabefelder verwendet?<br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=checkbox		
 }
 
-::HTML 6::[html]Ordnen Sie den HTML-Strukturelemente deren Beschreibung zu.<br>{
+::HTML 6::
+[html]Ordnen Sie den HTML-Strukturelemente deren Beschreibung zu.<br>
+{
 	=<p>&lt;main&gt;<br></p> -> Hauptinhalt
 	=<p>&lt;section&gt;<br></p> -> Gruppierungselement für einen Abschnitt der Webseite
-	=<p>&lt;aside&gt;<br></p> -> Zusätzliche Inhalte, welche in keinen direkten Zusammenhang zum Hauptinhalt stehen
+	=<p>&lt;aside&gt;<br></p> -> Zusätzliche Inhalte die in keinen direkten Zusammenhang zum Hauptinhalt stehen
     =<p>&lt;nav&gt;<br></p> -> Hauptnavigation der Webseite
     =<p>&lt;header&gt;<br></p> -> Einleitender Inhalt
     =<p>&lt;footer&gt;<br></p> -> Abschließender Inhalt
 }
 
-::HTML 7::[html]<p>Welches Tag wird für die Angabe von Tabellenheader verwendet?<br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%th#		
-	=%0%*#
+
+::HTML 7::
+[html]<p>Welches Tag wird für die Angabe von Tabellenheader verwendet?<br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=th	
+	=&lt;th&gt;
 }
 
-::HTML 8::[html]Ordnen Sie den Bestandteilen der URL "https://johnny:secret123@fh-kufstein.ac.at:8080/web/basics/script.php?sort=asc&page=3#q1" deren Bezeichnung zu.<br>{
+::HTML 8::
+[html]Ordnen Sie den Bestandteilen der URL "https\://johnny\:secret123@fh-kufstein.ac.at\:8080/web/basics/script.php?sort\=asc&page\=3\#q1" deren Bezeichnung zu.<br>
+{
 	=<p>https</p> -> scheme
-	=<p>johnny:secret123</p> -> userinfo
+	=<p>johnny\:secret123</p> -> userinfo
 	=<p>8080</p> -> port
     =<p>fh-kufstein.ac.at</p> -> host
-    =<p>johnny:secret123@fh-kufstein.ac.at:8080</p> -> authority
+    =<p>johnny\:secret123@fh-kufstein.ac.at\:8080</p> -> authority
     =<p>/web/basics/script.php</p> -> path
     =<p>q1</p> -> fragment
-    =<p>sort&#61;asc&amp;page&#61;3</p> -> query
+    =<p>sort\=asc&amp;page\=3</p> -> query
 }
 
-::HTML 9::[html]Ordnen Sie den Bedienelemente eines Web-Browsers deren Beschreibung zu.<br>{
+::HTML 9::
+[html]Ordnen Sie den Bedienelemente eines Web-Browsers deren Beschreibung zu.<br>
+{
 	=<p>Tabs</p> -> Mehrere Webseiten gleichzeitig öffnen
 	=<p>Favicon</p> -> Webseiten Icon
 	=<p>Adressleiste</p> -> Eingabe der URL oder Suchmaschinen Anfrage
@@ -59,7 +76,9 @@
     =<p>Refresh-Button</p> -> Webseite neuladen
 }
 
-::HTML 10::[html]Ordnen Sie den Web-Technologien deren primäre Funktion zu.<br>{
+::HTML 10::
+[html]Ordnen Sie den Web-Technologien deren primäre Funktion zu.<br>
+{
 	=<p>HTML</p> -> Struktur
 	=<p>CSS</p> -> Formatierung und Gestaltung
 	=<p>JavaScript</p> -> Verhalten

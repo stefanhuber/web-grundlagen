@@ -136,6 +136,14 @@ HTML-Elemente des normalen Flussen haben den `z-index` mit `0` gesetzt. Beim rel
 
 Das CSS-Grid Layout ist das mächtigste Layout-System für CSS. Mit dem CSS-Grid können 2-dimensionale Layouts über Spalten und Zeilen definiert werden. Wesentliche Bausteine sind der Grid-Container (Elternelement) und die Grid-Items (Kindelemente, Zellen).
 
+Für eine umfassende Beschreibung des CSS Grid-Layouts wird auf [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) verwiesen.
+
+## Flexbox-Layout
+
+Das CSS Flexbox Layout-System ist ein sehr flexibles und primär 1-dimensionales Layout. Ähnlich zum Grid-Layout wird es über den Flexbox-Container (Elternelement) und die Flex-Items (Kindelemente) definiert.
+
+Für eine umfassende Beschreibung des CSS Flexbox-Layouts wird auf [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) verwiesen.
+
 ## Tabellen
 
 Tabellen werden ausschließlich zur Darstellung von tabellarischen Daten genutzt. Zur Darstellung der Tabelleninhalte gibt es 2 Layoutvarianten (CSS-Eigenschaft `table-layout`), welche die Tabellenbreite bzw. die Spaltenbreite berechnen:

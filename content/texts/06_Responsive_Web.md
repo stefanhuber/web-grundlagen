@@ -113,3 +113,4 @@ Die folgende Mediaquery wird für Geräte aktiviert, welche den Hover-Effekt unt
 	/* */
 }
 ```
+

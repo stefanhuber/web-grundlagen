@@ -1,134 +1,110 @@
-::CSS-Eigenschaften 1::[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b>Schriftgröße 15 Pixel</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%font-size: 15px;#
-    =%100%font-size:15px;#
-    =%100%font-size: 15px#
-    =%100%font-size:15px#				
-	=%0%*#
+::CSS-Eigenschaften 1::[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b>Schriftgröße 15 Pixel</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=font-size\: 15px;
 }
 
-::CSS-Eigenschaften 2::[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b>rote Schriftfarbe</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%color: red;#
-    =%100%color:red;#
-    =%100%color: red#
-    =%100%color:red#				
-	=%0%*#
+::CSS-Eigenschaften 2::
+[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b>rote Schriftfarbe</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=color\: red;
 }
 
-::CSS-Eigenschaften 3::[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b>zentrierte Textausrichtung</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%text-align: center;#
-    =%100%text-align:center;#
-    =%100%text-align: center#
-    =%100%text-align:center#				
-	=%0%*#
+::CSS-Eigenschaften 3::
+[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b>zentrierte Textausrichtung</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=text-align\: center;
 }
 
-::CSS-Eigenschaften 4::[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b>Innenabstand 10 Pixel</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%padding: 10px;#
-    =%100%padding:10px;#
-    =%100%padding: 10px#
-    =%100%padding:10px#				
-	=%0%*#
+::CSS-Eigenschaften 4::
+[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b>Innenabstand 10 Pixel</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=padding\: 10px;
 }
 
-::CSS-Eigenschaften 5::[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b>Außenabstand 3 Prozent</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%margin: 3%;#
-    =%100%margin:3%;#
-    =%100%margin: 3%#
-    =%100%margin:3%#				
-	=%0%*#
+::CSS-Eigenschaften 5::
+[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b>Außenabstand 3 Prozent</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=margin\: 3%;
 }
 
-::CSS-Eigenschaften 6::[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b>Durchgezogener schwarzer Rahmen oben mit 1 Pixel</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%border-top: 1px solid black;#
-    =%100%border-top: 1px black solid;#
-    =%100%border-top: solid 1px black;#
-    =%100%border-top: solid black 1px;#
-    =%100%border-top: black 1px solid;#
-    =%100%border-top: black solid 1px;#
-    =%100%border-top:1px solid black;#
-    =%100%border-top:1px black solid;#
-    =%100%border-top:solid 1px black;#
-    =%100%border-top:solid black 1px;#
-    =%100%border-top:black 1px solid;#
-    =%100%border-top:black solid 1px;#					
-	=%0%*#
+::CSS-Eigenschaften 6::
+[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b>Durchgezogener schwarzer Rahmen oben mit 1 Pixel</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=border-top\: 1px solid black;			
 }
 
-::CSS-Eigenschaften 7::[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b></b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%margin: 3%;#
-    =%100%margin:3%;#
-    =%100%margin: 3%#
-    =%100%margin:3%#				
-	=%0%*#
+::CSS-Eigenschaften 7::
+[html]<p>Wie wird die folgende CSS-Eigenschaft innerhalb einer CSS-Regel definiert\: <b></b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=margin\: 3%;			
 }
 
-::Selektor Spezifität 1::[html]<p>Bestimme die Spezifität des Selektors\: <strong>.article \#comments ul &gt; li &gt; a.button</strong></p>{#
-	=%100%123:0#<p>Sehr Gut</p>
-	~#<p>Leider diese Antwort stimmt nicht</p>
-    ####<p><strong>1 ID + 2 Klassen + 3 Elemente = 100 + 20 + 3 = 123</strong></p>
+::Selektor Spezifität 1::
+[html]<p>Bestimme die Spezifität des Selektors\: <strong>.article \#comments ul &gt; li &gt; a.button</strong></p>
+{#
+	=%100%123:0#
+    ####<p><strong>1 ID + 2 Klassen + 3 Elemente \= 100 + 20 + 3 \= 123</strong></p>
 }
 
-::Selektor Spezifität 2::[html]<p>Bestimme die Spezifität des Selektors\: <strong>p + ul li:last-child</strong></p>{#
-	=%100%13:0#<p>Sehr Gut</p>
-	~#<p>Leider diese Antwort stimmt nicht</p>
-    ####<p><strong>1 Pseudoklasse + 3 Elemente = 10 + 3 = 13</strong></p>
+::Selektor Spezifität 2::
+[html]<p>Bestimme die Spezifität des Selektors\: <strong>p + ul li\:last-child</strong></p>
+{#
+	=%100%13:0#
+    ####<p><strong>1 Pseudoklasse + 3 Elemente \= 10 + 3 \= 13</strong></p>
 }
 
-::Selektor Spezifität 3::[html]<p>Bestimme die Spezifität des Selektors\: <strong>#address input[type=“checkbox“]:checked</strong></p>{#
-	=%100%121:0#<p>Sehr Gut</p>
-	~#<p>Leider diese Antwort stimmt nicht</p>
-    ####<p><strong>1 ID + 1 Attribut + 1 Pseudoklasse + 1 Element = 100 + 10 + 10 + 1 = 121</strong></p>
+::Selektor Spezifität 3::
+[html]<p>Bestimme die Spezifität des Selektors\: <strong>\#address input[type\=“checkbox“]\:checked</strong></p>
+{#
+	=%100%121:0#
+    ####<p><strong>1 ID + 1 Attribut + 1 Pseudoklasse + 1 Element \= 100 + 10 + 10 + 1 \= 121</strong></p>
 }
 
-::Selektor Spezifität 4::[html]<p>Bestimme die Spezifität des Selektors\: <strong>nav > ul > li:hover > a</strong></p>{#
-	=%100%13:0#<p>Sehr Gut</p>
-	~#<p>Leider diese Antwort stimmt nicht</p>
-    ####<p><strong>1 Pseudoklasse + 4 Elemente = 10 + 4 = 14</strong></p>
+::Selektor Spezifität 4::
+[html]<p>Bestimme die Spezifität des Selektors\: <strong>nav > ul > li\:hover > a</strong></p>
+{#
+	=%100%13:0#
+    ####<p><strong>1 Pseudoklasse + 4 Elemente \= 10 + 4 \= 14</strong></p>
 }
 
-::Selektoren 1::[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Alle direkten Nachkommen von p-Tags, welche das Attribut title gesetzt haben</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%p > [title]#
-	=%100%p>[title]#
-    =%100%p >[title]#
-    =%100%p> [title]#
-	=%0%*#
+::Selektoren 1::
+[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Alle direkten Nachkommen von p-Tags, welche das Attribut title gesetzt haben</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=p > [title]
 }
 
-::Selektoren 2::[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Listelemente innerhalb einer geordneten Liste, welche direkt auf ein Listelement (Geschwister auf gleicher Ebene) folgen</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%ol li + li#
-	=%100%ol li+li#
-    =%100%ol li+ li#
-    =%100%ol li +li#
-	=%0%*#
+::Selektoren 2::
+[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Listelemente innerhalb einer geordneten Liste, welche direkt auf ein Listelement (Geschwister auf gleicher Ebene) folgen</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=ol li + li
 }
 
-::Selektoren 3::[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Der erste Buchstabe eines Paragraphen, welcher nach einer Überschrift 1 auf selber Ebene folgt</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%h1 + p::first-letter#
-	=%100%h1+p::first-letter#
-    =%100%h1+ p::first-letter#
-    =%100%h1 +p::first-letter#
-	=%0%*#
+::Selektoren 3::
+[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Der erste Buchstabe eines Paragraphen, welcher nach einer Überschrift 1 auf selber Ebene folgt</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=h1 + p\:\:first-letter
 }
 
-::Selektoren 4::[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Hyperlinks innerhalb der Navigationsleite (nav), welche mit der Klasse top ausgestattet sind und über denen der Mauszeiger liegt</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%nav a.top:hover#	
-	=%0%*#
+::Selektoren 4::
+[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Hyperlinks innerhalb der Navigationsleite (nav), welche mit der Klasse top ausgestattet sind und über denen der Mauszeiger liegt</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=nav a.top\:hover
 }
 
-::Selektoren 5::[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Alle Hyperlinks deren Attribut href mit dem Wert mailto startet</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%nav a[href^=„mailto“]#	
-	=%0%*#
+::Selektoren 5::
+[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Alle Hyperlinks deren Attribut href mit dem Wert mailto startet</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=nav a[href^\="mailto"]
 }
 
-::Selektoren 6::[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Alle Hyperlinks mit der Klasse button, welche direkte Nachkommen von Listenelementen sind und innerhalb des Footers mit der ID top liegen</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%footer#top li + a.button#	
-    =%100%footer#top li+a.button#
-    =%100%footer#top li+ a.button#
-    =%100%footer#top li +a.button#
-	=%0%*#
+::Selektoren 6::
+[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Alle Hyperlinks mit der Klasse button, welche direkte Nachkommen von Listenelementen sind und innerhalb des Footers mit der ID top liegen</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=footer\#top li + a.button
 }
 
-::Selektoren 7::[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Alle aktivierten Checkboxen innerhalb des Formulars mit der ID contact</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>{
-	=%100%form#contact input[type="checkbox"]:checked#	
-	=%0%*#
+::Selektoren 7::
+[html]<p>Erarbeiten Sie folgenden Selektor\: <b>Alle aktivierten Checkboxen innerhalb des Formulars mit der ID contact</b><br>Bitte keine unnötigen Leerräume hinzufügen, sodass die automatisierte Bewertung funktioniert.</p>
+{
+	=form\#contact input[type\="checkbox"]\:checked
 }
